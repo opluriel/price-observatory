@@ -1,0 +1,539 @@
+period_start,period_end,product,region,price_min,price_max,price_avg,raw_label,page,quality_flag
+2026-05-04,2026-05-10,Maïs grain,Agnéby-Tiassa,500,500,500,Maïs grain,2,ok
+2026-05-04,2026-05-10,Maïs grain,District d'Abidjan,400,500,450,Maïs grain,2,ok
+2026-05-04,2026-05-10,Maïs grain,District de Yamoussoukro,400,400,400,Maïs grain,2,ok
+2026-05-04,2026-05-10,Maïs grain,Folon,140,140,140,Maïs grain,2,ok
+2026-05-04,2026-05-10,Maïs grain,Gbêkê,250,300,270,Maïs grain,2,ok
+2026-05-04,2026-05-10,Mil,Agnéby-Tiassa,600,600,600,Mil,2,ok
+2026-05-04,2026-05-10,Mil,District d'Abidjan,500,500,500,Mil,2,ok
+2026-05-04,2026-05-10,Mil,District de Yamoussoukro,500,500,500,Mil,2,ok
+2026-05-04,2026-05-10,Mil,Folon,700,700,700,Mil,2,ok
+2026-05-04,2026-05-10,Mil,Gbêkê,450,500,470,Mil,2,ok
+2026-05-04,2026-05-10,Riz importé de grande consommation,Agnéby-Tiassa,600,600,600,Riz importé de grande consommation,2,ok
+2026-05-04,2026-05-10,Riz importé de grande consommation,District d'Abidjan,500,600,540,Riz importé de grande consommation,2,ok
+2026-05-04,2026-05-10,Riz importé de grande consommation,District de Yamoussoukro,500,500,500,Riz importé de grande consommation,2,ok
+2026-05-04,2026-05-10,Riz importé de grande consommation,Gbêkê,500,500,500,Riz importé de grande consommation,2,ok
+2026-05-04,2026-05-10,Riz local blanchi,Agnéby-Tiassa,500,500,500,Riz local blanchi,2,ok
+2026-05-04,2026-05-10,Riz local blanchi,District d'Abidjan,600,700,650,Riz local blanchi,2,ok
+2026-05-04,2026-05-10,Riz local blanchi,District de Yamoussoukro,700,700,700,Riz local blanchi,2,ok
+2026-05-04,2026-05-10,Riz local blanchi,Folon,400,400,400,Riz local blanchi,2,ok
+2026-05-04,2026-05-10,Riz local blanchi,Gbêkê,600,600,600,Riz local blanchi,2,ok
+2026-05-04,2026-05-10,Banane plantain,Agnéby-Tiassa,290,330,320,Banane plantain,2,ok
+2026-05-04,2026-05-10,Banane plantain,District d'Abidjan,390,700,500,Banane plantain,2,ok
+2026-05-04,2026-05-10,Banane plantain,District de Yamoussoukro,650,680,660,Banane plantain,2,ok
+2026-05-04,2026-05-10,Banane plantain,Folon,370,380,380,Banane plantain,2,ok
+2026-05-04,2026-05-10,Banane plantain,Gbêkê,700,730,710,Banane plantain,2,ok
+2026-05-04,2026-05-10,Igname bêtê-bêtê,Agnéby-Tiassa,350,350,350,Igname bêtê-bêtê,2,ok
+2026-05-04,2026-05-10,Igname bêtê-bêtê,District d'Abidjan,350,400,380,Igname bêtê-bêtê,2,ok
+2026-05-04,2026-05-10,Igname bêtê-bêtê,District de Yamoussoukro,400,400,400,Igname bêtê-bêtê,2,ok
+2026-05-04,2026-05-10,Igname bêtê-bêtê,Folon,370,380,370,Igname bêtê-bêtê,2,ok
+2026-05-04,2026-05-10,Igname bêtê-bêtê,Gbêkê,350,350,350,Igname bêtê-bêtê,2,ok
+2026-05-04,2026-05-10,Igname klinglè,Agnéby-Tiassa,600,600,600,Igname klinglè,2,ok
+2026-05-04,2026-05-10,Igname klinglè,District d'Abidjan,500,500,500,Igname klinglè,2,ok
+2026-05-04,2026-05-10,Igname klinglè,District de Yamoussoukro,500,500,500,Igname klinglè,2,ok
+2026-05-04,2026-05-10,Igname klinglè,Gbêkê,600,600,600,Igname klinglè,2,ok
+2026-05-04,2026-05-10,Igname kponan,Agnéby-Tiassa,650,650,650,Igname kponan,2,ok
+2026-05-04,2026-05-10,Igname kponan,District d'Abidjan,550,1000,690,Igname kponan,2,ok
+2026-05-04,2026-05-10,Igname kponan,Gbêkê,700,700,700,Igname kponan,2,ok
+2026-05-04,2026-05-10,Manioc doux,Agnéby-Tiassa,260,340,320,Manioc doux,2,ok
+2026-05-04,2026-05-10,Manioc doux,District d'Abidjan,270,500,350,Manioc doux,2,ok
+2026-05-04,2026-05-10,Manioc doux,District de Yamoussoukro,450,560,500,Manioc doux,2,ok
+2026-05-04,2026-05-10,Manioc doux,Folon,270,280,280,Manioc doux,2,ok
+2026-05-04,2026-05-10,Pomme de terre,Agnéby-Tiassa,800,800,800,Pomme de terre,2,ok
+2026-05-04,2026-05-10,Pomme de terre,District d'Abidjan,400,500,450,Pomme de terre,2,ok
+2026-05-04,2026-05-10,Pomme de terre,District de Yamoussoukro,500,500,500,Pomme de terre,2,ok
+2026-05-04,2026-05-10,Pomme de terre,Folon,700,700,700,Pomme de terre,2,ok
+2026-05-04,2026-05-10,Pomme de terre,Gbêkê,600,600,600,Pomme de terre,2,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,Agnéby-Tiassa,710,890,800,Aubergine N'drowa,2,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,District d'Abidjan,600,1610,910,Aubergine N'drowa,2,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,District de Yamoussoukro,670,910,770,Aubergine N'drowa,2,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,Folon,1390,1560,1450,Aubergine N'drowa,2,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,Gbêkê,660,850,740,Aubergine N'drowa,2,ok
+2026-05-04,2026-05-10,Aubergine violette,District d'Abidjan,400,800,570,Aubergine violette,2,ok
+2026-05-04,2026-05-10,Aubergine violette,District de Yamoussoukro,630,710,670,Aubergine violette,2,ok
+2026-05-04,2026-05-10,Aubergine violette,Folon,420,430,430,Aubergine violette,2,ok
+2026-05-04,2026-05-10,Aubergine violette,Gbêkê,500,550,510,Aubergine violette,2,ok
+2026-05-04,2026-05-10,Carotte,Agnéby-Tiassa,1200,1200,1200,Carotte,2,ok
+2026-05-04,2026-05-10,Carotte,District d'Abidjan,800,1000,890,Carotte,2,ok
+2026-05-04,2026-05-10,Carotte,District de Yamoussoukro,1200,1200,1200,Carotte,2,ok
+2026-05-04,2026-05-10,Carotte,Folon,1500,1500,1500,Carotte,2,ok
+2026-05-04,2026-05-10,Carotte,Gbêkê,1100,1500,1270,Carotte,2,ok
+2026-05-04,2026-05-10,Chou vert,Agnéby-Tiassa,600,600,600,Chou vert,2,ok
+2026-05-04,2026-05-10,Chou vert,District d'Abidjan,500,700,540,Chou vert,2,ok
+2026-05-04,2026-05-10,Chou vert,District de Yamoussoukro,600,600,600,Chou vert,2,ok
+2026-05-04,2026-05-10,Chou vert,Folon,530,560,540,Chou vert,2,ok
+2026-05-04,2026-05-10,Chou vert,Gbêkê,450,550,500,Chou vert,2,ok
+2026-05-04,2026-05-10,Gombo frais,Agnéby-Tiassa,910,1000,960,"Gombo frais ""dioula""",2,ok
+2026-05-04,2026-05-10,Gombo frais,District d'Abidjan,830,2170,1290,"Gombo frais ""dioula""",2,ok
+2026-05-04,2026-05-10,Gombo frais,District de Yamoussoukro,770,1000,850,"Gombo frais ""dioula""",2,ok
+2026-05-04,2026-05-10,Gombo frais,Folon,1000,1250,1170,"Gombo frais ""dioula""",2,ok
+2026-05-04,2026-05-10,Gombo frais,Gbêkê,700,800,740,"Gombo frais ""dioula""",2,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,Agnéby-Tiassa,700,700,700,"Oignon ""violet de Galmi""",2,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,District d'Abidjan,500,600,530,"Oignon ""violet de Galmi""",2,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,District de Yamoussoukro,500,600,520,"Oignon ""violet de Galmi""",2,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,Folon,500,500,500,"Oignon ""violet de Galmi""",2,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,Gbêkê,400,400,400,"Oignon ""violet de Galmi""",2,ok
+2026-05-04,2026-05-10,Oignon Hollande,Agnéby-Tiassa,700,700,700,Oignon Hollande,2,ok
+2026-05-04,2026-05-10,Oignon Hollande,District d'Abidjan,500,700,520,Oignon Hollande,2,ok
+2026-05-04,2026-05-10,Oignon Hollande,District de Yamoussoukro,500,600,520,Oignon Hollande,2,ok
+2026-05-04,2026-05-10,Oignon Hollande,Folon,600,600,600,Oignon Hollande,2,ok
+2026-05-04,2026-05-10,Oignon Hollande,Gbêkê,500,500,500,Oignon Hollande,2,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,Agnéby-Tiassa,1000,1000,1000,Piment frais ordinaire,2,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,District d'Abidjan,1000,2380,1560,Piment frais ordinaire,2,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,District de Yamoussoukro,2780,3330,3040,Piment frais ordinaire,2,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,Folon,1390,1560,1480,Piment frais ordinaire,2,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,Gbêkê,770,910,850,Piment frais ordinaire,2,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,Agnéby-Tiassa,1000,1000,1000,Tomate SODEFEL,2,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,District d'Abidjan,700,1500,1070,Tomate SODEFEL,2,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,District de Yamoussoukro,600,800,770,Tomate SODEFEL,2,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,Folon,1300,1300,1300,Tomate SODEFEL,2,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,Gbêkê,700,900,780,Tomate SODEFEL,2,ok
+2026-05-04,2026-05-10,Arachide décortiquée,Agnéby-Tiassa,1200,1200,1200,Arachide décortiquée,2,ok
+2026-05-04,2026-05-10,Arachide décortiquée,District d'Abidjan,900,1200,1060,Arachide décortiquée,2,ok
+2026-05-04,2026-05-10,Arachide décortiquée,District de Yamoussoukro,1000,1000,1000,Arachide décortiquée,2,ok
+2026-05-04,2026-05-10,Arachide décortiquée,Folon,600,600,600,Arachide décortiquée,2,ok
+2026-05-04,2026-05-10,Arachide décortiquée,Gbêkê,800,800,800,Arachide décortiquée,2,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,Agnéby-Tiassa,400,400,400,Graine de palme ordinaire,2,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,District d'Abidjan,250,350,280,Graine de palme ordinaire,2,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,District de Yamoussoukro,300,300,300,Graine de palme ordinaire,2,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,Folon,220,220,220,Graine de palme ordinaire,2,ok
+2026-05-04,2026-05-10,Maïs grain,Grands-Ponts,500,500,500,Maïs grain,3,ok
+2026-05-04,2026-05-10,Maïs grain,Gôh,350,350,350,Maïs grain,3,ok
+2026-05-04,2026-05-10,Maïs grain,Gontougo,250,250,250,Maïs grain,3,ok
+2026-05-04,2026-05-10,Maïs grain,Guémon,250,280,270,Maïs grain,3,ok
+2026-05-04,2026-05-10,Maïs grain,Haut-Sassandra,500,500,500,Maïs grain,3,ok
+2026-05-04,2026-05-10,Maïs grain,Indénié-Djuablin,150,150,150,Maïs grain,3,ok
+2026-05-04,2026-05-10,Mil,Grands-Ponts,600,600,600,Mil,3,ok
+2026-05-04,2026-05-10,Mil,Gôh,500,500,500,Mil,3,ok
+2026-05-04,2026-05-10,Mil,Gontougo,500,500,500,Mil,3,ok
+2026-05-04,2026-05-10,Mil,Guémon,600,600,600,Mil,3,ok
+2026-05-04,2026-05-10,Mil,Haut-Sassandra,500,500,500,Mil,3,ok
+2026-05-04,2026-05-10,Mil,Indénié-Djuablin,600,600,600,Mil,3,ok
+2026-05-04,2026-05-10,Riz importé de grande consommation,Grands-Ponts,500,500,500,Riz importé de grande consommation,3,ok
+2026-05-04,2026-05-10,Riz importé de grande consommation,Gôh,500,500,500,Riz importé de grande consommation,3,ok
+2026-05-04,2026-05-10,Riz importé de grande consommation,Gontougo,500,500,500,Riz importé de grande consommation,3,ok
+2026-05-04,2026-05-10,Riz importé de grande consommation,Guémon,500,500,500,Riz importé de grande consommation,3,ok
+2026-05-04,2026-05-10,Riz importé de grande consommation,Haut-Sassandra,500,500,500,Riz importé de grande consommation,3,ok
+2026-05-04,2026-05-10,Riz importé de grande consommation,Indénié-Djuablin,550,550,550,Riz importé de grande consommation,3,ok
+2026-05-04,2026-05-10,Riz local blanchi,Grands-Ponts,600,600,600,Riz local blanchi,3,ok
+2026-05-04,2026-05-10,Riz local blanchi,Gôh,500,500,500,Riz local blanchi,3,ok
+2026-05-04,2026-05-10,Riz local blanchi,Gontougo,600,600,600,Riz local blanchi,3,ok
+2026-05-04,2026-05-10,Riz local blanchi,Guémon,500,500,500,Riz local blanchi,3,ok
+2026-05-04,2026-05-10,Riz local blanchi,Haut-Sassandra,600,600,600,Riz local blanchi,3,ok
+2026-05-04,2026-05-10,Riz local blanchi,Indénié-Djuablin,600,600,600,Riz local blanchi,3,ok
+2026-05-04,2026-05-10,Banane plantain,Grands-Ponts,540,560,550,Banane plantain,3,ok
+2026-05-04,2026-05-10,Banane plantain,Gôh,290,560,420,Banane plantain,3,ok
+2026-05-04,2026-05-10,Banane plantain,Gontougo,430,440,440,Banane plantain,3,ok
+2026-05-04,2026-05-10,Banane plantain,Guémon,270,280,270,Banane plantain,3,ok
+2026-05-04,2026-05-10,Banane plantain,Haut-Sassandra,540,730,620,Banane plantain,3,ok
+2026-05-04,2026-05-10,Banane plantain,Indénié-Djuablin,290,310,300,Banane plantain,3,ok
+2026-05-04,2026-05-10,Igname bêtê-bêtê,Gôh,400,400,400,Igname bêtê-bêtê,3,ok
+2026-05-04,2026-05-10,Igname bêtê-bêtê,Guémon,430,450,440,Igname bêtê-bêtê,3,ok
+2026-05-04,2026-05-10,Igname bêtê-bêtê,Haut-Sassandra,350,550,460,Igname bêtê-bêtê,3,ok
+2026-05-04,2026-05-10,Igname klinglè,Grands-Ponts,750,750,750,Igname klinglè,3,ok
+2026-05-04,2026-05-10,Igname klinglè,Gôh,500,500,500,Igname klinglè,3,ok
+2026-05-04,2026-05-10,Igname klinglè,Gontougo,640,640,640,Igname klinglè,3,ok
+2026-05-04,2026-05-10,Igname kponan,Gontougo,490,490,490,Igname kponan,3,ok
+2026-05-04,2026-05-10,Manioc doux,Grands-Ponts,390,400,400,Manioc doux,3,ok
+2026-05-04,2026-05-10,Manioc doux,Gôh,160,470,300,Manioc doux,3,ok
+2026-05-04,2026-05-10,Manioc doux,Gontougo,240,240,240,Manioc doux,3,ok
+2026-05-04,2026-05-10,Manioc doux,Guémon,190,200,190,Manioc doux,3,ok
+2026-05-04,2026-05-10,Manioc doux,Haut-Sassandra,230,340,270,Manioc doux,3,ok
+2026-05-04,2026-05-10,Manioc doux,Indénié-Djuablin,180,190,180,Manioc doux,3,ok
+2026-05-04,2026-05-10,Pomme de terre,Grands-Ponts,500,500,500,Pomme de terre,3,ok
+2026-05-04,2026-05-10,Pomme de terre,Gôh,500,600,530,Pomme de terre,3,ok
+2026-05-04,2026-05-10,Pomme de terre,Gontougo,1000,1000,1000,Pomme de terre,3,ok
+2026-05-04,2026-05-10,Pomme de terre,Guémon,600,600,600,Pomme de terre,3,ok
+2026-05-04,2026-05-10,Pomme de terre,Haut-Sassandra,600,600,600,Pomme de terre,3,ok
+2026-05-04,2026-05-10,Pomme de terre,Indénié-Djuablin,600,600,600,Pomme de terre,3,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,Grands-Ponts,760,790,780,Aubergine N'drowa,3,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,Gontougo,1430,1670,1550,Aubergine N'drowa,3,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,Guémon,500,740,630,Aubergine N'drowa,3,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,Haut-Sassandra,380,380,380,Aubergine N'drowa,3,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,Indénié-Djuablin,1040,1210,1130,Aubergine N'drowa,3,ok
+2026-05-04,2026-05-10,Aubergine violette,Grands-Ponts,500,500,500,Aubergine violette,3,ok
+2026-05-04,2026-05-10,Aubergine violette,Gôh,500,500,500,Aubergine violette,3,ok
+2026-05-04,2026-05-10,Aubergine violette,Gontougo,560,590,580,Aubergine violette,3,ok
+2026-05-04,2026-05-10,Aubergine violette,Haut-Sassandra,360,590,440,Aubergine violette,3,ok
+2026-05-04,2026-05-10,Aubergine violette,Indénié-Djuablin,400,400,400,Aubergine violette,3,ok
+2026-05-04,2026-05-10,Carotte,Grands-Ponts,600,800,730,Carotte,3,ok
+2026-05-04,2026-05-10,Carotte,Gôh,1200,1200,1200,Carotte,3,ok
+2026-05-04,2026-05-10,Carotte,Gontougo,1300,1500,1400,Carotte,3,ok
+2026-05-04,2026-05-10,Carotte,Guémon,1250,1250,1250,Carotte,3,ok
+2026-05-04,2026-05-10,Carotte,Haut-Sassandra,1300,1300,1300,Carotte,3,ok
+2026-05-04,2026-05-10,Carotte,Indénié-Djuablin,1000,1000,1000,Carotte,3,ok
+2026-05-04,2026-05-10,Chou vert,Grands-Ponts,300,450,320,Chou vert,3,ok
+2026-05-04,2026-05-10,Chou vert,Gôh,1000,1000,1000,Chou vert,3,ok
+2026-05-04,2026-05-10,Chou vert,Gontougo,400,530,470,Chou vert,3,ok
+2026-05-04,2026-05-10,Chou vert,Guémon,500,500,500,Chou vert,3,ok
+2026-05-04,2026-05-10,Chou vert,Haut-Sassandra,910,1250,1140,Chou vert,3,ok
+2026-05-04,2026-05-10,Chou vert,Indénié-Djuablin,500,500,500,Chou vert,3,ok
+2026-05-04,2026-05-10,Gombo frais,Grands-Ponts,740,1820,1450,"Gombo frais ""dioula""",3,ok
+2026-05-04,2026-05-10,Gombo frais,Gôh,560,1440,1180,"Gombo frais ""dioula""",3,ok
+2026-05-04,2026-05-10,Gombo frais,Gontougo,1000,1560,1250,"Gombo frais ""dioula""",3,ok
+2026-05-04,2026-05-10,Gombo frais,Guémon,690,960,810,"Gombo frais ""dioula""",3,ok
+2026-05-04,2026-05-10,Gombo frais,Haut-Sassandra,500,1920,1250,"Gombo frais ""dioula""",3,ok
+2026-05-04,2026-05-10,Gombo frais,Indénié-Djuablin,910,1110,1000,"Gombo frais ""dioula""",3,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,Grands-Ponts,600,600,600,"Oignon ""violet de Galmi""",3,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,Gôh,500,500,500,"Oignon ""violet de Galmi""",3,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,Gontougo,450,3850,1030,"Oignon ""violet de Galmi""",3,suspect_outlier
+2026-05-04,2026-05-10,Oignon violet de Galmi,Guémon,500,500,500,"Oignon ""violet de Galmi""",3,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,Haut-Sassandra,600,600,600,"Oignon ""violet de Galmi""",3,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,Indénié-Djuablin,600,600,600,"Oignon ""violet de Galmi""",3,ok
+2026-05-04,2026-05-10,Oignon Hollande,Grands-Ponts,500,500,500,Oignon Hollande,3,ok
+2026-05-04,2026-05-10,Oignon Hollande,Gôh,500,500,500,Oignon Hollande,3,ok
+2026-05-04,2026-05-10,Oignon Hollande,Gontougo,450,580,510,Oignon Hollande,3,ok
+2026-05-04,2026-05-10,Oignon Hollande,Guémon,500,500,500,Oignon Hollande,3,ok
+2026-05-04,2026-05-10,Oignon Hollande,Indénié-Djuablin,600,600,600,Oignon Hollande,3,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,Grands-Ponts,2270,2780,2430,Piment frais ordinaire,3,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,Gôh,830,2270,1240,Piment frais ordinaire,3,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,Gontougo,2000,2500,2170,Piment frais ordinaire,3,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,Guémon,710,1430,1030,Piment frais ordinaire,3,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,Haut-Sassandra,1390,1430,1420,Piment frais ordinaire,3,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,Indénié-Djuablin,2000,2500,2420,Piment frais ordinaire,3,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,Grands-Ponts,800,1000,960,Tomate SODEFEL,3,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,Gôh,1200,1200,1200,Tomate SODEFEL,3,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,Gontougo,670,1000,800,Tomate SODEFEL,3,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,Guémon,1000,1000,1000,Tomate SODEFEL,3,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,Haut-Sassandra,1000,1000,1000,Tomate SODEFEL,3,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,Indénié-Djuablin,1200,1200,1200,Tomate SODEFEL,3,ok
+2026-05-04,2026-05-10,Arachide décortiquée,Grands-Ponts,1200,1200,1200,Arachide décortiquée,3,ok
+2026-05-04,2026-05-10,Arachide décortiquée,Gôh,800,900,870,Arachide décortiquée,3,ok
+2026-05-04,2026-05-10,Arachide décortiquée,Gontougo,1000,1000,1000,Arachide décortiquée,3,ok
+2026-05-04,2026-05-10,Arachide décortiquée,Guémon,1000,1000,1000,Arachide décortiquée,3,ok
+2026-05-04,2026-05-10,Arachide décortiquée,Haut-Sassandra,1000,1000,1000,Arachide décortiquée,3,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,Grands-Ponts,250,250,250,Graine de palme ordinaire,3,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,Gôh,170,170,170,Graine de palme ordinaire,3,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,Gontougo,250,250,250,Graine de palme ordinaire,3,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,Guémon,150,150,150,Graine de palme ordinaire,3,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,Haut-Sassandra,240,270,250,Graine de palme ordinaire,3,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,Indénié-Djuablin,310,330,320,Graine de palme ordinaire,3,ok
+2026-05-04,2026-05-10,Maïs grain,Kabadougou,140,140,140,Maïs grain,4,ok
+2026-05-04,2026-05-10,Maïs grain,La Mé,500,500,500,Maïs grain,4,ok
+2026-05-04,2026-05-10,Maïs grain,Marahoué,250,250,250,Maïs grain,4,ok
+2026-05-04,2026-05-10,Maïs grain,Moronou,300,300,300,Maïs grain,4,ok
+2026-05-04,2026-05-10,Maïs grain,Nawa,300,300,300,Maïs grain,4,ok
+2026-05-04,2026-05-10,Mil,Kabadougou,650,650,650,Mil,4,ok
+2026-05-04,2026-05-10,Mil,La Mé,600,600,600,Mil,4,ok
+2026-05-04,2026-05-10,Mil,Marahoué,600,600,600,Mil,4,ok
+2026-05-04,2026-05-10,Mil,Moronou,600,600,600,Mil,4,ok
+2026-05-04,2026-05-10,Mil,Nawa,700,700,700,Mil,4,ok
+2026-05-04,2026-05-10,Mil,N'Zi,600,600,600,Mil,4,ok
+2026-05-04,2026-05-10,Riz importé de grande consommation,Kabadougou,400,400,400,Riz importé de grande consommation,4,ok
+2026-05-04,2026-05-10,Riz importé de grande consommation,La Mé,600,600,600,Riz importé de grande consommation,4,ok
+2026-05-04,2026-05-10,Riz importé de grande consommation,Marahoué,400,400,400,Riz importé de grande consommation,4,ok
+2026-05-04,2026-05-10,Riz importé de grande consommation,Nawa,500,500,500,Riz importé de grande consommation,4,ok
+2026-05-04,2026-05-10,Riz importé de grande consommation,N'Zi,500,550,520,Riz importé de grande consommation,4,ok
+2026-05-04,2026-05-10,Riz local blanchi,Kabadougou,450,450,450,Riz local blanchi,4,ok
+2026-05-04,2026-05-10,Riz local blanchi,La Mé,500,500,500,Riz local blanchi,4,ok
+2026-05-04,2026-05-10,Riz local blanchi,Marahoué,400,400,400,Riz local blanchi,4,ok
+2026-05-04,2026-05-10,Riz local blanchi,Moronou,600,600,600,Riz local blanchi,4,ok
+2026-05-04,2026-05-10,Riz local blanchi,Nawa,500,500,500,Riz local blanchi,4,ok
+2026-05-04,2026-05-10,Riz local blanchi,N'Zi,550,600,580,Riz local blanchi,4,ok
+2026-05-04,2026-05-10,Banane plantain,Kabadougou,450,450,450,Banane plantain,4,ok
+2026-05-04,2026-05-10,Banane plantain,La Mé,290,330,320,Banane plantain,4,ok
+2026-05-04,2026-05-10,Banane plantain,Marahoué,90,110,100,Banane plantain,4,suspect_outlier
+2026-05-04,2026-05-10,Banane plantain,Moronou,390,420,410,Banane plantain,4,ok
+2026-05-04,2026-05-10,Banane plantain,Nawa,250,260,260,Banane plantain,4,ok
+2026-05-04,2026-05-10,Banane plantain,N'Zi,330,550,420,Banane plantain,4,ok
+2026-05-04,2026-05-10,Igname bêtê-bêtê,La Mé,350,350,350,Igname bêtê-bêtê,4,ok
+2026-05-04,2026-05-10,Igname bêtê-bêtê,Marahoué,600,600,600,Igname bêtê-bêtê,4,ok
+2026-05-04,2026-05-10,Igname bêtê-bêtê,Moronou,530,830,680,Igname bêtê-bêtê,4,ok
+2026-05-04,2026-05-10,Igname bêtê-bêtê,Nawa,400,400,400,Igname bêtê-bêtê,4,ok
+2026-05-04,2026-05-10,Igname bêtê-bêtê,N'Zi,350,400,370,Igname bêtê-bêtê,4,ok
+2026-05-04,2026-05-10,Igname klinglè,La Mé,600,600,600,Igname klinglè,4,ok
+2026-05-04,2026-05-10,Igname klinglè,Marahoué,700,700,700,Igname klinglè,4,ok
+2026-05-04,2026-05-10,Igname klinglè,Nawa,800,800,800,Igname klinglè,4,ok
+2026-05-04,2026-05-10,Igname kponan,La Mé,650,650,650,Igname kponan,4,ok
+2026-05-04,2026-05-10,Manioc doux,Kabadougou,200,210,210,Manioc doux,4,ok
+2026-05-04,2026-05-10,Manioc doux,La Mé,260,340,320,Manioc doux,4,ok
+2026-05-04,2026-05-10,Manioc doux,Marahoué,290,530,370,Manioc doux,4,ok
+2026-05-04,2026-05-10,Manioc doux,Moronou,140,140,140,Manioc doux,4,ok
+2026-05-04,2026-05-10,Manioc doux,Nawa,170,250,210,Manioc doux,4,ok
+2026-05-04,2026-05-10,Pomme de terre,Kabadougou,700,700,700,Pomme de terre,4,ok
+2026-05-04,2026-05-10,Pomme de terre,La Mé,800,800,800,Pomme de terre,4,ok
+2026-05-04,2026-05-10,Pomme de terre,Marahoué,500,500,500,Pomme de terre,4,ok
+2026-05-04,2026-05-10,Pomme de terre,Moronou,700,700,700,Pomme de terre,4,ok
+2026-05-04,2026-05-10,Pomme de terre,Nawa,700,700,700,Pomme de terre,4,ok
+2026-05-04,2026-05-10,Pomme de terre,N'Zi,700,700,700,Pomme de terre,4,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,Kabadougou,590,630,600,Aubergine N'drowa,4,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,La Mé,710,890,800,Aubergine N'drowa,4,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,Marahoué,1320,1670,1490,Aubergine N'drowa,4,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,Moronou,1250,1390,1320,Aubergine N'drowa,4,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,Nawa,560,630,590,Aubergine N'drowa,4,ok
+2026-05-04,2026-05-10,Aubergine violette,Kabadougou,430,540,470,Aubergine violette,4,ok
+2026-05-04,2026-05-10,Aubergine violette,Marahoué,480,2860,1180,Aubergine violette,4,suspect_outlier
+2026-05-04,2026-05-10,Aubergine violette,Nawa,150,180,170,Aubergine violette,4,ok
+2026-05-04,2026-05-10,Aubergine violette,N'Zi,270,500,410,Aubergine violette,4,ok
+2026-05-04,2026-05-10,Carotte,Kabadougou,1500,1500,1500,Carotte,4,ok
+2026-05-04,2026-05-10,Carotte,La Mé,1200,1200,1200,Carotte,4,ok
+2026-05-04,2026-05-10,Carotte,Marahoué,1000,1000,1000,Carotte,4,ok
+2026-05-04,2026-05-10,Carotte,Moronou,1200,1200,1200,Carotte,4,ok
+2026-05-04,2026-05-10,Carotte,Nawa,1250,1250,1250,Carotte,4,ok
+2026-05-04,2026-05-10,Carotte,N'Zi,800,1000,910,Carotte,4,ok
+2026-05-04,2026-05-10,Chou vert,Kabadougou,380,390,390,Chou vert,4,ok
+2026-05-04,2026-05-10,Chou vert,La Mé,600,600,600,Chou vert,4,ok
+2026-05-04,2026-05-10,Chou vert,Marahoué,700,700,700,Chou vert,4,ok
+2026-05-04,2026-05-10,Chou vert,Moronou,600,600,600,Chou vert,4,ok
+2026-05-04,2026-05-10,Chou vert,Nawa,290,330,310,Chou vert,4,ok
+2026-05-04,2026-05-10,Chou vert,N'Zi,500,630,550,Chou vert,4,ok
+2026-05-04,2026-05-10,Gombo frais,Kabadougou,630,630,630,"Gombo frais ""dioula""",4,ok
+2026-05-04,2026-05-10,Gombo frais,La Mé,910,1000,960,"Gombo frais ""dioula""",4,ok
+2026-05-04,2026-05-10,Gombo frais,Marahoué,1520,2000,1780,"Gombo frais ""dioula""",4,ok
+2026-05-04,2026-05-10,Gombo frais,Moronou,1470,1670,1570,"Gombo frais ""dioula""",4,ok
+2026-05-04,2026-05-10,Gombo frais,Nawa,630,710,670,"Gombo frais ""dioula""",4,ok
+2026-05-04,2026-05-10,Gombo frais,N'Zi,830,980,890,"Gombo frais ""dioula""",4,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,Kabadougou,500,500,500,"Oignon ""violet de Galmi""",4,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,La Mé,700,700,700,"Oignon ""violet de Galmi""",4,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,Marahoué,600,600,600,"Oignon ""violet de Galmi""",4,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,Moronou,500,500,500,"Oignon ""violet de Galmi""",4,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,Nawa,750,750,750,"Oignon ""violet de Galmi""",4,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,N'Zi,500,700,560,"Oignon ""violet de Galmi""",4,ok
+2026-05-04,2026-05-10,Oignon Hollande,Kabadougou,400,400,400,Oignon Hollande,4,ok
+2026-05-04,2026-05-10,Oignon Hollande,La Mé,700,700,700,Oignon Hollande,4,ok
+2026-05-04,2026-05-10,Oignon Hollande,Marahoué,500,500,500,Oignon Hollande,4,ok
+2026-05-04,2026-05-10,Oignon Hollande,Moronou,500,500,500,Oignon Hollande,4,ok
+2026-05-04,2026-05-10,Oignon Hollande,Nawa,700,700,700,Oignon Hollande,4,ok
+2026-05-04,2026-05-10,Oignon Hollande,N'Zi,600,700,630,Oignon Hollande,4,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,Kabadougou,1090,1140,1120,Piment frais ordinaire,4,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,La Mé,1000,1000,1000,Piment frais ordinaire,4,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,Marahoué,1790,2500,2180,Piment frais ordinaire,4,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,Moronou,1670,2500,2220,Piment frais ordinaire,4,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,Nawa,1670,1820,1770,Piment frais ordinaire,4,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,N'Zi,1000,1250,1150,Piment frais ordinaire,4,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,Kabadougou,1000,1000,1000,Tomate SODEFEL,4,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,La Mé,1000,1000,1000,Tomate SODEFEL,4,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,Marahoué,700,700,700,Tomate SODEFEL,4,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,Moronou,800,900,870,Tomate SODEFEL,4,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,Nawa,1200,1200,1200,Tomate SODEFEL,4,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,N'Zi,700,800,750,Tomate SODEFEL,4,ok
+2026-05-04,2026-05-10,Arachide décortiquée,Kabadougou,750,750,750,Arachide décortiquée,4,ok
+2026-05-04,2026-05-10,Arachide décortiquée,La Mé,1200,1200,1200,Arachide décortiquée,4,ok
+2026-05-04,2026-05-10,Arachide décortiquée,Marahoué,800,800,800,Arachide décortiquée,4,ok
+2026-05-04,2026-05-10,Arachide décortiquée,Nawa,700,700,700,Arachide décortiquée,4,ok
+2026-05-04,2026-05-10,Arachide décortiquée,N'Zi,1200,1200,1200,Arachide décortiquée,4,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,Kabadougou,280,290,290,Graine de palme ordinaire,4,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,La Mé,400,400,400,Graine de palme ordinaire,4,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,Marahoué,380,420,400,Graine de palme ordinaire,4,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,Moronou,280,280,280,Graine de palme ordinaire,4,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,Nawa,250,250,250,Graine de palme ordinaire,4,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,N'Zi,330,330,330,Graine de palme ordinaire,4,ok
+2026-05-04,2026-05-10,Maïs grain,Poro,140,150,150,Maïs grain,5,ok
+2026-05-04,2026-05-10,Maïs grain,San-Pédro,300,300,300,Maïs grain,5,ok
+2026-05-04,2026-05-10,Maïs grain,Sud-Comoé,250,300,280,Maïs grain,5,ok
+2026-05-04,2026-05-10,Maïs grain,Tchologo,170,170,170,Maïs grain,5,ok
+2026-05-04,2026-05-10,Maïs grain,Tonkpi,200,200,200,Maïs grain,5,ok
+2026-05-04,2026-05-10,Maïs grain,Worodougou,130,130,130,Maïs grain,5,ok
+2026-05-04,2026-05-10,Mil,Poro,480,500,490,Mil,5,ok
+2026-05-04,2026-05-10,Mil,San-Pédro,400,400,400,Mil,5,ok
+2026-05-04,2026-05-10,Mil,Sud-Comoé,500,500,500,Mil,5,ok
+2026-05-04,2026-05-10,Mil,Tchologo,360,360,360,Mil,5,ok
+2026-05-04,2026-05-10,Mil,Tonkpi,600,600,600,Mil,5,ok
+2026-05-04,2026-05-10,Mil,Worodougou,600,690,660,Mil,5,ok
+2026-05-04,2026-05-10,Riz importé de grande consommation,San-Pédro,530,530,530,Riz importé de grande consommation,5,ok
+2026-05-04,2026-05-10,Riz importé de grande consommation,Sud-Comoé,400,400,400,Riz importé de grande consommation,5,ok
+2026-05-04,2026-05-10,Riz importé de grande consommation,Tonkpi,450,450,450,Riz importé de grande consommation,5,ok
+2026-05-04,2026-05-10,Riz importé de grande consommation,Worodougou,450,450,450,Riz importé de grande consommation,5,ok
+2026-05-04,2026-05-10,Riz local blanchi,Poro,400,400,400,Riz local blanchi,5,ok
+2026-05-04,2026-05-10,Riz local blanchi,San-Pédro,450,450,450,Riz local blanchi,5,ok
+2026-05-04,2026-05-10,Riz local blanchi,Sud-Comoé,600,600,600,Riz local blanchi,5,ok
+2026-05-04,2026-05-10,Riz local blanchi,Tchologo,450,450,450,Riz local blanchi,5,ok
+2026-05-04,2026-05-10,Riz local blanchi,Tonkpi,600,600,600,Riz local blanchi,5,ok
+2026-05-04,2026-05-10,Riz local blanchi,Worodougou,470,500,490,Riz local blanchi,5,ok
+2026-05-04,2026-05-10,Banane plantain,Poro,330,340,330,Banane plantain,5,ok
+2026-05-04,2026-05-10,Banane plantain,San-Pédro,450,450,450,Banane plantain,5,ok
+2026-05-04,2026-05-10,Banane plantain,Sud-Comoé,810,910,870,Banane plantain,5,ok
+2026-05-04,2026-05-10,Banane plantain,Tchologo,770,770,770,Banane plantain,5,ok
+2026-05-04,2026-05-10,Banane plantain,Tonkpi,130,130,130,Banane plantain,5,suspect_outlier
+2026-05-04,2026-05-10,Banane plantain,Worodougou,260,270,270,Banane plantain,5,ok
+2026-05-04,2026-05-10,Igname bêtê-bêtê,Poro,500,500,500,Igname bêtê-bêtê,5,ok
+2026-05-04,2026-05-10,Igname bêtê-bêtê,San-Pédro,400,400,400,Igname bêtê-bêtê,5,ok
+2026-05-04,2026-05-10,Igname bêtê-bêtê,Sud-Comoé,500,600,530,Igname bêtê-bêtê,5,ok
+2026-05-04,2026-05-10,Igname bêtê-bêtê,Tonkpi,280,280,280,Igname bêtê-bêtê,5,ok
+2026-05-04,2026-05-10,Igname bêtê-bêtê,Worodougou,300,310,300,Igname bêtê-bêtê,5,ok
+2026-05-04,2026-05-10,Igname klinglè,Poro,600,700,630,Igname klinglè,5,ok
+2026-05-04,2026-05-10,Igname klinglè,San-Pédro,700,700,700,Igname klinglè,5,ok
+2026-05-04,2026-05-10,Igname klinglè,Tchologo,700,700,700,Igname klinglè,5,ok
+2026-05-04,2026-05-10,Igname klinglè,Tonkpi,450,450,450,Igname klinglè,5,ok
+2026-05-04,2026-05-10,Igname klinglè,Worodougou,420,510,480,Igname klinglè,5,ok
+2026-05-04,2026-05-10,Igname kponan,Sud-Comoé,600,700,630,Igname kponan,5,ok
+2026-05-04,2026-05-10,Manioc doux,Poro,280,310,290,Manioc doux,5,ok
+2026-05-04,2026-05-10,Manioc doux,San-Pédro,180,190,180,Manioc doux,5,ok
+2026-05-04,2026-05-10,Manioc doux,Sud-Comoé,450,610,540,Manioc doux,5,ok
+2026-05-04,2026-05-10,Manioc doux,Tchologo,200,200,200,Manioc doux,5,ok
+2026-05-04,2026-05-10,Manioc doux,Tonkpi,230,230,230,Manioc doux,5,ok
+2026-05-04,2026-05-10,Manioc doux,Worodougou,100,160,120,Manioc doux,5,ok
+2026-05-04,2026-05-10,Pomme de terre,Poro,600,700,650,Pomme de terre,5,ok
+2026-05-04,2026-05-10,Pomme de terre,San-Pédro,600,600,600,Pomme de terre,5,ok
+2026-05-04,2026-05-10,Pomme de terre,Sud-Comoé,700,700,700,Pomme de terre,5,ok
+2026-05-04,2026-05-10,Pomme de terre,Tchologo,500,500,500,Pomme de terre,5,ok
+2026-05-04,2026-05-10,Pomme de terre,Tonkpi,750,750,750,Pomme de terre,5,ok
+2026-05-04,2026-05-10,Pomme de terre,Worodougou,700,860,750,Pomme de terre,5,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,Poro,670,770,720,Aubergine N'drowa,5,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,San-Pédro,800,860,830,Aubergine N'drowa,5,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,Tchologo,630,770,700,Aubergine N'drowa,5,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,Tonkpi,520,660,580,Aubergine N'drowa,5,ok
+2026-05-04,2026-05-10,Aubergine N'drowa,Worodougou,710,800,760,Aubergine N'drowa,5,ok
+2026-05-04,2026-05-10,Aubergine violette,Sud-Comoé,600,700,680,Aubergine violette,5,ok
+2026-05-04,2026-05-10,Aubergine violette,Tchologo,530,590,560,Aubergine violette,5,ok
+2026-05-04,2026-05-10,Aubergine violette,Tonkpi,400,430,420,Aubergine violette,5,ok
+2026-05-04,2026-05-10,Aubergine violette,Worodougou,360,420,390,Aubergine violette,5,ok
+2026-05-04,2026-05-10,Carotte,Sud-Comoé,1000,1200,1020,Carotte,5,ok
+2026-05-04,2026-05-10,Carotte,Tchologo,1670,1880,1770,Carotte,5,ok
+2026-05-04,2026-05-10,Carotte,Tonkpi,1500,1500,1500,Carotte,5,ok
+2026-05-04,2026-05-10,Carotte,Worodougou,1670,1820,1720,Carotte,5,ok
+2026-05-04,2026-05-10,Chou vert,Sud-Comoé,650,740,690,Chou vert,5,ok
+2026-05-04,2026-05-10,Chou vert,Tchologo,430,1000,720,Chou vert,5,ok
+2026-05-04,2026-05-10,Chou vert,Tonkpi,470,510,490,Chou vert,5,ok
+2026-05-04,2026-05-10,Chou vert,Worodougou,560,590,580,Chou vert,5,ok
+2026-05-04,2026-05-10,Gombo frais,Poro,590,770,670,"Gombo frais ""dioula""",5,ok
+2026-05-04,2026-05-10,Gombo frais,San-Pédro,700,750,720,"Gombo frais ""dioula""",5,ok
+2026-05-04,2026-05-10,Gombo frais,Tchologo,710,830,770,"Gombo frais ""dioula""",5,ok
+2026-05-04,2026-05-10,Gombo frais,Tonkpi,690,780,730,"Gombo frais ""dioula""",5,ok
+2026-05-04,2026-05-10,Gombo frais,Worodougou,630,910,730,"Gombo frais ""dioula""",5,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,Poro,500,500,500,"Oignon ""violet de Galmi""",5,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,San-Pédro,500,500,500,"Oignon ""violet de Galmi""",5,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,Sud-Comoé,500,500,500,"Oignon ""violet de Galmi""",5,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,Tchologo,770,780,780,"Oignon ""violet de Galmi""",5,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,Tonkpi,500,500,500,"Oignon ""violet de Galmi""",5,ok
+2026-05-04,2026-05-10,Oignon violet de Galmi,Worodougou,490,500,500,"Oignon ""violet de Galmi""",5,ok
+2026-05-04,2026-05-10,Oignon Hollande,Poro,500,500,500,Oignon Hollande,5,ok
+2026-05-04,2026-05-10,Oignon Hollande,San-Pédro,500,500,500,Oignon Hollande,5,ok
+2026-05-04,2026-05-10,Oignon Hollande,Tonkpi,500,500,500,Oignon Hollande,5,ok
+2026-05-04,2026-05-10,Oignon Hollande,Worodougou,470,500,490,Oignon Hollande,5,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,Poro,1490,1670,1600,Piment frais ordinaire,5,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,San-Pédro,1180,2500,1720,Piment frais ordinaire,5,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,Sud-Comoé,2380,3130,2800,Piment frais ordinaire,5,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,Tchologo,1250,1670,1460,Piment frais ordinaire,5,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,Tonkpi,1790,1790,1790,Piment frais ordinaire,5,ok
+2026-05-04,2026-05-10,Piment frais ordinaire,Worodougou,1610,2000,1740,Piment frais ordinaire,5,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,Poro,1300,1500,1400,Tomate SODEFEL,5,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,San-Pédro,1000,1000,1000,Tomate SODEFEL,5,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,Sud-Comoé,1000,1000,1000,Tomate SODEFEL,5,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,Tchologo,940,1000,970,Tomate SODEFEL,5,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,Tonkpi,1100,1100,1100,Tomate SODEFEL,5,ok
+2026-05-04,2026-05-10,Tomate SODEFEL,Worodougou,1250,1300,1280,Tomate SODEFEL,5,ok
+2026-05-04,2026-05-10,Arachide décortiquée,Poro,600,670,620,Arachide décortiquée,5,ok
+2026-05-04,2026-05-10,Arachide décortiquée,San-Pédro,1300,1300,1300,Arachide décortiquée,5,ok
+2026-05-04,2026-05-10,Arachide décortiquée,Sud-Comoé,900,1000,970,Arachide décortiquée,5,ok
+2026-05-04,2026-05-10,Arachide décortiquée,Tchologo,820,820,820,Arachide décortiquée,5,ok
+2026-05-04,2026-05-10,Arachide décortiquée,Worodougou,600,660,620,Arachide décortiquée,5,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,Poro,330,330,330,Graine de palme ordinaire,5,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,San-Pédro,250,260,260,Graine de palme ordinaire,5,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,Sud-Comoé,300,300,300,Graine de palme ordinaire,5,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,Tchologo,290,290,290,Graine de palme ordinaire,5,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,Tonkpi,150,150,150,Graine de palme ordinaire,5,ok
+2026-05-04,2026-05-10,Graine de palme ordinaire,Worodougou,190,220,200,Graine de palme ordinaire,5,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,Agnéby-Tiassa,3000,3000,3000,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,District d'Abidjan,3000,3800,3450,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,District de Yamoussoukro,3000,3000,3000,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,Folon,2000,2000,2000,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,Gbêkê,3500,3500,3500,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf sans os,Agnéby-Tiassa,3200,3200,3200,Viande de bœuf sans os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf sans os,District d'Abidjan,3500,4000,3780,Viande de bœuf sans os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf sans os,District de Yamoussoukro,3200,3200,3200,Viande de bœuf sans os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,Grands-Ponts,3000,3000,3000,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,Gôh,3000,3000,3000,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,Gontougo,2600,2600,2600,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,Guémon,3000,3000,3000,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,Haut-Sassandra,3000,3000,3000,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,Indénié-Djuablin,3000,3000,3000,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf sans os,Grands-Ponts,3300,3300,3300,Viande de bœuf sans os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf sans os,Gôh,3500,3500,3500,Viande de bœuf sans os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf sans os,Gontougo,3000,3000,3000,Viande de bœuf sans os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf sans os,Guémon,3500,3500,3500,Viande de bœuf sans os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,Kabadougou,2500,2500,2500,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,La Mé,3000,3000,3000,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,Marahoué,2700,2700,2700,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,Moronou,3000,3000,3000,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,Nawa,3200,3200,3200,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf sans os,Kabadougou,3000,3000,3000,Viande de bœuf sans os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf sans os,La Mé,3200,3200,3200,Viande de bœuf sans os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf sans os,Marahoué,3500,3500,3500,Viande de bœuf sans os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf sans os,Moronou,3500,3500,3500,Viande de bœuf sans os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf sans os,Nawa,3700,3700,3700,Viande de bœuf sans os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,Poro,2500,2500,2500,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,San-Pédro,3300,3300,3300,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,Sud-Comoé,3500,3500,3500,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,Tchologo,2000,2000,2000,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,Tonkpi,3000,3000,3000,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf avec os,Worodougou,2300,2300,2300,Viande de bœuf avec os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf sans os,Poro,3000,3000,3000,Viande de bœuf sans os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf sans os,San-Pédro,4000,40000,16000,Viande de bœuf sans os,6,suspect_outlier
+2026-05-04,2026-05-10,Viande de bœuf sans os,Sud-Comoé,4000,4000,4000,Viande de bœuf sans os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf sans os,Tonkpi,3500,3500,3500,Viande de bœuf sans os,6,ok
+2026-05-04,2026-05-10,Viande de bœuf sans os,Worodougou,2800,2800,2800,Viande de bœuf sans os,6,ok
+2026-05-04,2026-05-10,Poisson congelé carpe noire,Agnéby-Tiassa,1350,1350,1350,Poisson congelé CARPE NOIRE,7,ok
+2026-05-04,2026-05-10,Poisson congelé carpe noire,District d'Abidjan,1300,1500,1430,Poisson congelé CARPE NOIRE,7,ok
+2026-05-04,2026-05-10,Poisson congelé carpe noire,District de Yamoussoukro,1540,1670,1600,Poisson congelé CARPE NOIRE,7,ok
+2026-05-04,2026-05-10,Poisson congelé carpe noire,Folon,2000,2000,2000,Poisson congelé CARPE NOIRE,7,ok
+2026-05-04,2026-05-10,Poisson congelé carpe noire,Gbêkê,1400,1400,1400,Poisson congelé CARPE NOIRE,7,ok
+2026-05-04,2026-05-10,Poisson congelé chinchard,Agnéby-Tiassa,1400,1400,1400,Poisson congelé CHINCHARD,7,ok
+2026-05-04,2026-05-10,Poisson congelé chinchard,District d'Abidjan,1300,1500,1430,Poisson congelé CHINCHARD,7,ok
+2026-05-04,2026-05-10,Poisson congelé chinchard,District de Yamoussoukro,1690,1750,1720,Poisson congelé CHINCHARD,7,ok
+2026-05-04,2026-05-10,Poisson congelé chinchard,Folon,1600,1600,1600,Poisson congelé CHINCHARD,7,ok
+2026-05-04,2026-05-10,Poisson congelé chinchard,Gbêkê,1700,1700,1700,Poisson congelé CHINCHARD,7,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,Agnéby-Tiassa,1300,1300,1300,Poisson congelé MAQUEREAU,7,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,District d'Abidjan,1300,1500,1380,Poisson congelé MAQUEREAU,7,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,District de Yamoussoukro,1610,1690,1660,Poisson congelé MAQUEREAU,7,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,Folon,1600,1600,1600,Poisson congelé MAQUEREAU,7,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,Gbêkê,1800,1800,1800,Poisson congelé MAQUEREAU,7,ok
+2026-05-04,2026-05-10,Poisson congelé thon,Agnéby-Tiassa,1500,1500,1500,Poisson congelé THON,7,ok
+2026-05-04,2026-05-10,Poisson congelé thon,District d'Abidjan,1000,1500,1270,Poisson congelé THON,7,ok
+2026-05-04,2026-05-10,Poisson congelé thon,District de Yamoussoukro,1760,1850,1810,Poisson congelé THON,7,ok
+2026-05-04,2026-05-10,Poisson congelé thon,Folon,2000,2000,2000,Poisson congelé THON,7,ok
+2026-05-04,2026-05-10,Poisson congelé thon,Gbêkê,1300,1400,1360,Poisson congelé THON,7,ok
+2026-05-04,2026-05-10,Poisson congelé carpe noire,Grands-Ponts,1600,1600,1600,Poisson congelé CARPE NOIRE,7,ok
+2026-05-04,2026-05-10,Poisson congelé carpe noire,Gôh,1400,1500,1470,Poisson congelé CARPE NOIRE,7,ok
+2026-05-04,2026-05-10,Poisson congelé carpe noire,Haut-Sassandra,1500,1500,1500,Poisson congelé CARPE NOIRE,7,ok
+2026-05-04,2026-05-10,Poisson congelé carpe noire,Indénié-Djuablin,1700,1700,1700,Poisson congelé CARPE NOIRE,7,ok
+2026-05-04,2026-05-10,Poisson congelé chinchard,Grands-Ponts,1600,1600,1600,Poisson congelé CHINCHARD,7,ok
+2026-05-04,2026-05-10,Poisson congelé chinchard,Guémon,1700,1700,1700,Poisson congelé CHINCHARD,7,ok
+2026-05-04,2026-05-10,Poisson congelé chinchard,Haut-Sassandra,1500,1500,1500,Poisson congelé CHINCHARD,7,ok
+2026-05-04,2026-05-10,Poisson congelé chinchard,Indénié-Djuablin,1500,1500,1500,Poisson congelé CHINCHARD,7,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,Grands-Ponts,1500,1500,1500,Poisson congelé MAQUEREAU,7,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,Gôh,1150,1300,1200,Poisson congelé MAQUEREAU,7,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,Gontougo,1500,1500,1500,Poisson congelé MAQUEREAU,7,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,Guémon,1800,1800,1800,Poisson congelé MAQUEREAU,7,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,Haut-Sassandra,1500,1500,1500,Poisson congelé MAQUEREAU,7,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,Indénié-Djuablin,1500,1500,1500,Poisson congelé MAQUEREAU,7,ok
+2026-05-04,2026-05-10,Poisson congelé thon,Grands-Ponts,1600,1600,1600,Poisson congelé THON,7,ok
+2026-05-04,2026-05-10,Poisson congelé thon,Gôh,1400,1750,1520,Poisson congelé THON,7,ok
+2026-05-04,2026-05-10,Poisson congelé thon,Gontougo,1500,1500,1500,Poisson congelé THON,7,ok
+2026-05-04,2026-05-10,Poisson congelé thon,Haut-Sassandra,1500,1500,1500,Poisson congelé THON,7,ok
+2026-05-04,2026-05-10,Poisson congelé thon,Indénié-Djuablin,1500,1500,1500,Poisson congelé THON,7,ok
+2026-05-04,2026-05-10,Poisson congelé carpe noire,Kabadougou,2000,2000,2000,Poisson congelé CARPE NOIRE,8,ok
+2026-05-04,2026-05-10,Poisson congelé carpe noire,La Mé,1350,1350,1350,Poisson congelé CARPE NOIRE,8,ok
+2026-05-04,2026-05-10,Poisson congelé carpe noire,Marahoué,2500,2500,2500,Poisson congelé CARPE NOIRE,8,ok
+2026-05-04,2026-05-10,Poisson congelé carpe noire,Moronou,2000,2000,2000,Poisson congelé CARPE NOIRE,8,ok
+2026-05-04,2026-05-10,Poisson congelé carpe noire,Nawa,2000,2000,2000,Poisson congelé CARPE NOIRE,8,ok
+2026-05-04,2026-05-10,Poisson congelé carpe noire,N'Zi,2000,2000,2000,Poisson congelé CARPE NOIRE,8,ok
+2026-05-04,2026-05-10,Poisson congelé chinchard,Kabadougou,1500,1500,1500,Poisson congelé CHINCHARD,8,ok
+2026-05-04,2026-05-10,Poisson congelé chinchard,La Mé,1400,1400,1400,Poisson congelé CHINCHARD,8,ok
+2026-05-04,2026-05-10,Poisson congelé chinchard,Marahoué,1800,1800,1800,Poisson congelé CHINCHARD,8,ok
+2026-05-04,2026-05-10,Poisson congelé chinchard,Moronou,1500,1500,1500,Poisson congelé CHINCHARD,8,ok
+2026-05-04,2026-05-10,Poisson congelé chinchard,N'Zi,1700,1700,1700,Poisson congelé CHINCHARD,8,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,Kabadougou,1500,1500,1500,Poisson congelé MAQUEREAU,8,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,La Mé,1300,1300,1300,Poisson congelé MAQUEREAU,8,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,Marahoué,2000,2000,2000,Poisson congelé MAQUEREAU,8,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,Moronou,1700,1700,1700,Poisson congelé MAQUEREAU,8,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,Nawa,1700,1700,1700,Poisson congelé MAQUEREAU,8,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,N'Zi,1800,1800,1800,Poisson congelé MAQUEREAU,8,ok
+2026-05-04,2026-05-10,Poisson congelé thon,Kabadougou,2000,2000,2000,Poisson congelé THON,8,ok
+2026-05-04,2026-05-10,Poisson congelé thon,La Mé,1500,1500,1500,Poisson congelé THON,8,ok
+2026-05-04,2026-05-10,Poisson congelé thon,Marahoué,1600,1600,1600,Poisson congelé THON,8,ok
+2026-05-04,2026-05-10,Poisson congelé thon,Moronou,1500,1500,1500,Poisson congelé THON,8,ok
+2026-05-04,2026-05-10,Poisson congelé thon,N'Zi,1800,1800,1800,Poisson congelé THON,8,ok
+2026-05-04,2026-05-10,Poisson congelé carpe noire,San-Pédro,1800,1800,1800,Poisson congelé CARPE NOIRE,8,ok
+2026-05-04,2026-05-10,Poisson congelé carpe noire,Tchologo,2000,2000,2000,Poisson congelé CARPE NOIRE,8,ok
+2026-05-04,2026-05-10,Poisson congelé carpe noire,Worodougou,2300,2300,2300,Poisson congelé CARPE NOIRE,8,ok
+2026-05-04,2026-05-10,Poisson congelé chinchard,Poro,1500,1600,1570,Poisson congelé CHINCHARD,8,ok
+2026-05-04,2026-05-10,Poisson congelé chinchard,Sud-Comoé,1700,1800,1770,Poisson congelé CHINCHARD,8,ok
+2026-05-04,2026-05-10,Poisson congelé chinchard,Tchologo,1600,1600,1600,Poisson congelé CHINCHARD,8,ok
+2026-05-04,2026-05-10,Poisson congelé chinchard,Worodougou,1500,1500,1500,Poisson congelé CHINCHARD,8,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,Poro,1500,1500,1500,Poisson congelé MAQUEREAU,8,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,Sud-Comoé,1600,1700,1670,Poisson congelé MAQUEREAU,8,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,Tchologo,1400,1400,1400,Poisson congelé MAQUEREAU,8,ok
+2026-05-04,2026-05-10,Poisson congelé maquereau,Worodougou,1500,1600,1570,Poisson congelé MAQUEREAU,8,ok
+2026-05-04,2026-05-10,Poisson congelé thon,Poro,1500,1500,1500,Poisson congelé THON,8,ok
+2026-05-04,2026-05-10,Poisson congelé thon,Tchologo,1500,1500,1500,Poisson congelé THON,8,ok

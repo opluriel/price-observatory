@@ -83,3 +83,10 @@ def test_two_line_names_with_irregular_heights(tmp_path):
     maize = df[df["product"] == "Maïs grain"].set_index("region")
     assert maize.loc["Folon", "price_avg"] == 153
     assert set(df[df["product"] == "Mil"]["region"]) == {"District d'Abidjan", "Gbêkê"}
+
+
+def test_problems_explain_why_a_week_is_rejected(parsed):
+    _, report = parsed
+    assert report.problems() == ["6/23 départements"]
+    report.unknown_labels.add("Produit nouveau")
+    assert any("Produit nouveau" in p for p in report.problems())

@@ -85,9 +85,21 @@ class ParseReport:
     warnings: list[str] = field(default_factory=list)
     rows: int = 0
 
+    def problems(self) -> list[str]:
+        """Raisons pour lesquelles l'extraction n'est pas jugée fiable (liste vide = OK)."""
+        found = []
+        if self.rows == 0:
+            found.append("aucune observation extraite")
+        if len(self.regions_found) != EXPECTED_REGIONS:
+            found.append(f"{len(self.regions_found)}/{EXPECTED_REGIONS} départements")
+        if self.unknown_regions:
+            found.append(f"en-têtes inconnus {sorted(self.unknown_regions)}")
+        if self.unknown_labels:
+            found.append(f"produits inconnus {sorted(self.unknown_labels)}")
+        return found
+
     def ok(self) -> bool:
-        return (self.rows > 0 and len(self.regions_found) == EXPECTED_REGIONS
-                and not self.unknown_labels and not self.unknown_regions)
+        return not self.problems()
 
     def summary(self) -> str:
         lines = [
