@@ -1,8 +1,8 @@
-"""Chaîne complète : télécharger les PDF hebdomadaires, les extraire, les charger en base.
+"""Complete workflow: download the weekly PDFs, extract them, and upload them to the database.
 
-Exemples :
-    python -m src.pipeline --from 2026-01-05 --to 2026-06-01   # rattrapage de l'historique
-    python -m src.pipeline --weeks-back 3                      # mode hebdomadaire (idempotent)
+Examples :
+    python -m src.pipeline --from 2026-01-05 --to 2026-06-01   # Catching up on the history
+    python -m src.pipeline --weeks-back 3                      # weekly mode (idempotent)
 """
 from __future__ import annotations
 
@@ -18,7 +18,7 @@ RAW_DIR = Path("data/raw")
 
 
 def recent_weeks(today: date, n: int) -> list[date]:
-    """Les n derniers lundis de semaines TERMINÉES (la semaine en cours n'est pas encore publiée)."""
+    """The n most recent Mondays of completed weeks (the current week is not yet published)."""
     last = monday_of(today - timedelta(days=7))
     return [last - timedelta(days=7 * k) for k in reversed(range(n))]
 
@@ -31,7 +31,7 @@ def process_week(monday: date, conn, dest_dir=RAW_DIR, download=download_week, l
         return {"week": monday, "status": "not_found"}
     try:
         return {"week": monday, **load(path, conn)}
-    except Exception as exc:                      # une semaine en échec n'arrête pas les autres
+    except Exception as exc:                      # One week of setbacks won't stop the others
         return {"week": monday, "status": "failed", "detail": str(exc).splitlines()[0][:400]}
 
 
@@ -45,7 +45,7 @@ def run(weeks: list[date], conn, **kwargs) -> list[dict]:
 
 
 def exit_code(results: list[dict]) -> int:
-    """0 si tout va bien (une semaine pas encore publiée n'est PAS une erreur), 1 si une semaine est rejetée."""
+    """0 if everything is fine (a week not yet published is NOT an error), 1 if a week is rejected."""
     return 1 if any(r["status"] == "failed" for r in results) else 0
 
 

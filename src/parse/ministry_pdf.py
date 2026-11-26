@@ -1,9 +1,9 @@
-"""Extraction du PDF hebdomadaire « Prix à la consommation des produits vivriers ».
+"""Extraction of the weekly PDF “Consumer Prices of Food Products.”
 
-Pourquoi par positions ? Quand un produit n'est pas relevé dans un département, la case
-est simplement absente du PDF. En lisant le texte ligne par ligne, on perd l'information
-« à quel département appartient ce nombre ». On lit donc la position horizontale (x) de
-chaque nombre et on le rattache à la colonne d'en-tête la plus proche.
+Why by positions? When a product is not recorded in a department, the cell
+is simply absent from the PDF. By reading the text line by line, we lose the information
+“which department this number belongs to”. We therefore read the horizontal position (x) of
+each number and attach it to the nearest header column.
 
 Usage :
     python -m src.parse.ministry_pdf data/raw/PRIX_A_LA_CONSOMMATION_01_06_AU_07_06_2026.pdf

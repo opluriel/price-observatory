@@ -1,8 +1,8 @@
--- Observatoire des prix : schéma PostgreSQL (compatible Supabase / Neon)
--- Principes : on trace chaque collecte, on ne corrige jamais une donnée en silence
--- (on la signale avec quality_flag), et le schéma est multi-pays dès le départ.
+-- Price Observatory: PostgreSQL schema (Supabase/Neon-compatible)
+-- Principles: we track each ingestion, we never correct data silently
+-- (we flag it with quality_flag), and the schema is multi-country from the start.
 
--- ---------- Référentiels ----------
+-- ---------- Referentials ----------
 
 CREATE TABLE country (
     code     CHAR(2) PRIMARY KEY,
@@ -25,7 +25,7 @@ CREATE TABLE source (
     url              TEXT,
     kind             TEXT NOT NULL CHECK (kind IN ('official', 'open_data', 'retail')),
     frequency        TEXT,   -- daily, weekly, monthly, irregular
-    terms_checked_on DATE,   -- NULL = conditions d'utilisation pas encore vérifiées
+    terms_checked_on DATE,   -- NULL = Terms of Use not yet verified
     notes            TEXT
 );
 
@@ -36,7 +36,7 @@ CREATE TABLE product (
     unit     TEXT NOT NULL DEFAULT 'kg'
 );
 
--- Un même produit peut changer de libellé d'une semaine à l'autre dans une source.
+-- The name of a single product may change from week to week within a source.
 CREATE TABLE product_alias (
     source_id  INT  NOT NULL REFERENCES source(id),
     raw_name   TEXT NOT NULL,
@@ -44,21 +44,21 @@ CREATE TABLE product_alias (
     PRIMARY KEY (source_id, raw_name)
 );
 
--- ---------- Traçabilité des collectes ----------
+-- ---------- Traceability of Data Collection ----------
 
 CREATE TABLE ingestion_run (
     id          BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     source_id   INT         NOT NULL REFERENCES source(id),
     started_at  TIMESTAMPTZ NOT NULL DEFAULT now(),
     file_url    TEXT,
-    file_sha256 TEXT,                      -- évite de recharger deux fois le même fichier
+    file_sha256 TEXT,                      -- prevents the same file from being uploaded twice
     status      TEXT        NOT NULL DEFAULT 'running'
                 CHECK (status IN ('running', 'success', 'failed', 'skipped')),
     rows_loaded INT,
     error       TEXT
 );
 
--- ---------- Faits ----------
+-- ---------- Facts ----------
 
 CREATE TABLE price_observation (
     id           BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -81,21 +81,21 @@ CREATE TABLE price_observation (
 CREATE INDEX idx_obs_product_period ON price_observation (product_id, period_start);
 CREATE INDEX idx_obs_region_period  ON price_observation (region_id, period_start);
 
--- Prix réglementés : plafonds (riz, sucre, huile...) et carburant.
+-- Regulated prices: price caps (rice, sugar, oil, etc.) and fuel.
 CREATE TABLE regulated_price (
     id            INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     source_id     INT     NOT NULL REFERENCES source(id),
     product_label TEXT    NOT NULL,
-    pack          TEXT,                    -- ex. 'sac 22,5 kg', 'litre'
+    pack          TEXT,                    -- e.g., “22.5-kg bag,” “liter”
     max_price     NUMERIC(12,2) NOT NULL,
     currency      CHAR(3) NOT NULL DEFAULT 'XOF',
-    area          TEXT,                    -- ex. 'Abidjan + 30 km', 'national'
+    area          TEXT,                    -- e.g., ‘Abidjan + 30 km’, 'national'
     valid_from    DATE    NOT NULL,
     valid_to      DATE,
     legal_ref     TEXT
 );
 
--- ---------- Données de départ ----------
+-- ---------- Initial Data ----------
 
 INSERT INTO country (code, name, currency) VALUES ('CI', 'Côte d''Ivoire', 'XOF');
 
@@ -108,7 +108,7 @@ INSERT INTO source (code, name, url, kind, frequency, notes) VALUES
  ('sikafinance_conso',  'Sikafinance - prix de grande consommation',        'https://www.sikafinance.com/conso/liste_des_prix', 'retail', 'irregular', 'conditions à vérifier'),
  ('jumia_ci',           'Jumia Côte d''Ivoire - supermarché',                'https://www.jumia.ci/le-supermarche', 'retail', 'daily', 'conditions et robots.txt à vérifier');
 
--- 24 départements apparaissant dans le PDF hebdomadaire du ministère (23 ou 24 selon les semaines)
+-- 24 departments listed in the ministry's weekly PDF (23 or 24, depending on the week)
 INSERT INTO region (country_code, name, main_city) VALUES
  ('CI', 'Agnéby-Tiassa', 'Agboville'),   ('CI', 'District d''Abidjan', 'Abidjan'),
  ('CI', 'District de Yamoussoukro', 'Yamoussoukro'), ('CI', 'Folon', 'Minignan'),
@@ -123,7 +123,7 @@ INSERT INTO region (country_code, name, main_city) VALUES
  ('CI', 'Tchologo', 'Ouangolodougou'),   ('CI', 'Tonkpi', 'Man'),
  ('CI', 'Worodougou', 'Séguéla'), ('CI', 'Bélier', 'Toumodi');
 
--- 28 produits du PDF hebdomadaire
+-- 28 products in the weekly PDF
 INSERT INTO product (name, category) VALUES
  ('Maïs grain', 'céréales'), ('Mil', 'céréales'),
  ('Riz importé de grande consommation', 'céréales'), ('Riz local blanchi', 'céréales'),

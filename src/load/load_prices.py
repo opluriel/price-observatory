@@ -1,9 +1,9 @@
-"""Charge un PDF hebdomadaire du ministère dans PostgreSQL.
+"""Upload a weekly PDF from the ministry to PostgreSQL.
 
-Garanties :
-- idempotent : le même fichier (même empreinte SHA-256) n'est jamais chargé deux fois ;
-- atomique : tout le fichier est chargé, ou rien ;
-- traçable : chaque tentative laisse une ligne dans ingestion_run (success / failed / skipped).
+Guarantees:
+- idempotent: the same file (same SHA-256 hash) is never loaded twice;
+- atomic: the entire file is loaded, or nothing;
+- traceable: each attempt leaves a row in ingestion_run (success / failed / skipped).
 
 Usage :
     python -m src.load.load_prices data/raw/PRIX_A_LA_CONSOMMATION_01_06_AU_07_06_2026.pdf

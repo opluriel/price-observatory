@@ -1,12 +1,12 @@
-"""Référentiels : source unique = fichiers CSV versionnés dans data/reference/.
+"""Reference data: single source = versioned CSV files in data/reference/.
 
-    districts.csv     14 districts (12 districts + 2 districts autonomes)
-    regions.csv       33 zones : 31 régions + les 2 districts autonomes d'Abidjan et de Yamoussoukro
-    departments.csv   111 départements (depuis 2020), chacun rattaché à sa région
-    products.csv      produits suivis
+    districts.csv     14 districts (12 districts + 2 autonomous districts)
+    regions.csv       33 areas: 31 regions + the 2 autonomous districts of Abidjan and Yamoussoukro
+    departments.csv   111 departments (since 2020), each assigned to its region
+    products.csv      tracked products
 
-Ajouter une ligne dans un CSV, puis lancer  python -m src.admin setup.
-Le parseur lit ces mêmes fichiers : plus aucune liste à modifier dans le code.
+Add a row to a CSV file, then run  python -m src.admin setup.
+The parser reads these same files: no more lists to modify in the code.
 """
 from __future__ import annotations
 
@@ -72,7 +72,7 @@ def load_products() -> list[dict]:
 
 
 def apply_migrations(conn) -> list[str]:
-    """Applique les fichiers sql/migrations/*.sql dans l'ordre (tous sont idempotents)."""
+    """Apply the files in the sql/migrations/*.sql directory in order (all are idempotent)."""
     applied = []
     for path in sorted(MIGRATIONS_DIR.glob("*.sql")):
         conn.execute(path.read_text(encoding="utf-8"))
@@ -82,7 +82,7 @@ def apply_migrations(conn) -> list[str]:
 
 
 def sync_reference(conn) -> dict:
-    """Aligne la base sur les CSV : ajoute ou met à jour, ne supprime jamais."""
+    """Align the database with the CSV files: add or update, never delete."""
     counts: dict[str, int] = {}
 
     def bump(key: str, inserted: bool) -> None:

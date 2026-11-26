@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       weeks_back:
-        description: "Nombre de semaines terminées à revérifier"
+        description: "Number of completed weeks to be rechecked"
         default: "3"
 
 concurrency:

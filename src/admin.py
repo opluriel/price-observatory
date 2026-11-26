@@ -1,8 +1,8 @@
-"""Commandes d'administration.
+"""Administrative commands.
 
-    python -m src.admin migrate   # applique les migrations SQL (structure)
-    python -m src.admin sync      # aligne la base sur data/reference/*.csv (données de référence)
-    python -m src.admin setup     # migrate + sync (à utiliser en cas de doute)
+    python -m src.admin migrate   # applies SQL migrations (structure)
+    python -m src.admin sync      # aligns the database with data/reference/*.csv (reference data)
+    python -m src.admin setup     # migrate + sync (to use in case of doubt)
 """
 import os
 import sys
@@ -21,11 +21,11 @@ def main() -> None:
         sys.exit("Usage : python -m src.admin migrate | sync | setup")
     url = os.environ.get("DATABASE_URL")
     if not url:
-        sys.exit("DATABASE_URL manquante (voir .env.example)")
+        sys.exit("DATABASE_URL missing (see .env.example)")
     command = sys.argv[1]
     with psycopg.connect(url) as conn:
         if command in ("migrate", "setup"):
-            print("Migrations appliquées :", ", ".join(apply_migrations(conn)))
+            print("Migrations applied :", ", ".join(apply_migrations(conn)))
         if command in ("sync", "setup"):
             for key, value in sync_reference(conn).items():
                 print(f"{key:<18} {value}")

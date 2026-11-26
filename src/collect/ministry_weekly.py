@@ -1,11 +1,11 @@
-"""Téléchargement des PDF hebdomadaires du ministère du Commerce (prix des produits vivriers).
+"""Download the weekly PDFs from the Ministry of Commerce (food prices).
 
-Les fichiers suivent une convention de nommage stable : une semaine du lundi au dimanche, par ex.
-PRIX_A_LA_CONSOMMATION_01_06_AU_07_06_2026.pdf. On calcule donc les adresses candidates au lieu de
-« scraper » des pages HTML, sur deux hébergements publics du même document.
+The files follow a consistent naming convention: one week from Monday to Sunday, e.g.,
+RETAIL_PRICES_01_06_TO_07_06_2026.pdf. We therefore calculate candidate URLs instead of
+“scraping” HTML pages, using two public hosts for the same document.
 
-Bonnes pratiques : on lit robots.txt, on s'identifie, on espace les requêtes (2 s) et on ne
-retélécharge jamais un fichier déjà présent.
+Best practices: we check robots.txt, authenticate, space out requests (2 s), and never
+re-download a file that’s already present
 """
 from __future__ import annotations
 
@@ -22,7 +22,7 @@ URL_TEMPLATES = [
     "https://www.economie-ivoirienne.ci/sites/default/files/sites/default/files/inline-files/{name}",
     "https://www.ocpv-ci.com/doc/prix_consomation/{name}",
 ]
-REQUEST_DELAY = 2.0  # secondes entre deux requêtes
+REQUEST_DELAY = 2.0  # seconds between two requests
 
 
 def monday_of(d: date) -> date:
@@ -53,7 +53,7 @@ def make_session() -> requests.Session:
 
 
 class RobotsCache:
-    """Lit robots.txt une fois par site. En cas de doute (erreur réseau, accès refusé) : on s'abstient."""
+    """Reads the robots.txt file once per site. If in doubt (network error, access denied): skip it."""
 
     def __init__(self, session):
         self.session = session
@@ -80,7 +80,7 @@ class RobotsCache:
 
 def download_week(monday: date, dest_dir: str | Path, session=None, robots=None,
                   delay: float = REQUEST_DELAY, sleep=time.sleep) -> Path | None:
-    """Retourne le chemin du PDF de la semaine (déjà présent ou téléchargé), ou None s'il est introuvable."""
+    """Returns the path to this week's PDF (if it already exists or has been downloaded), or “None” if it cannot be found."""
     target = Path(dest_dir) / filename_for(monday)
     if target.exists():
         return target
@@ -94,7 +94,7 @@ def download_week(monday: date, dest_dir: str | Path, session=None, robots=None,
             resp = session.get(url, timeout=30)
         except requests.RequestException:
             continue
-        if resp.status_code == 200 and resp.content[:5] == b"%PDF-":   # une page d'erreur HTML n'est pas un PDF
+        if resp.status_code == 200 and resp.content[:5] == b"%PDF-":   # An HTML error page is not a PDF
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes(resp.content)
             return target

@@ -1,12 +1,12 @@
-"""Règles de qualité : on signale les anomalies, on ne les corrige jamais en silence."""
+"""Quality guidelines: Report any issues; never correct them without saying anything."""
 import pandas as pd
 
-AVG_FACTOR = 3.0     # moyenne > 3 x la médiane (ou < médiane / 3) des départements pour ce produit
-SPREAD_FACTOR = 5.0  # prix maxi > 5 x prix mini dans un même département
+AVG_FACTOR = 3.0     # average > 3 x the median (or < median / 3) of departments for this product
+SPREAD_FACTOR = 5.0  # max price > 5 x min price in the same department
 
 
 def flag_quality(df: pd.DataFrame) -> pd.DataFrame:
-    """Ajoute la colonne quality_flag : ok, inconsistent_stats ou suspect_outlier."""
+    """Add the quality_flag column: ok, inconsistent_stats or suspect_outlier."""
     df = df.copy()
     df["quality_flag"] = "ok"
 
