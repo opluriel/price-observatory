@@ -12,6 +12,7 @@ import pytest
 
 from src.load.load_prices import load_file
 from src.parse import ministry_pdf
+from src.reference import apply_migrations, sync_reference
 from tests.make_fixture import build
 
 DB_URL = os.environ.get("TEST_DATABASE_URL")
@@ -21,13 +22,15 @@ SCHEMA_SQL = Path(__file__).resolve().parent.parent / "sql" / "schema.sql"
 
 @pytest.fixture()
 def conn(monkeypatch):
-    monkeypatch.setattr(ministry_pdf, "EXPECTED_REGIONS", 6)   # le PDF factice n'a que 6 départements
+    monkeypatch.setattr(ministry_pdf, "MIN_REGIONS", 6)   # le PDF factice n'a que 6 départements
     schema = "test_" + uuid.uuid4().hex[:8]
     with psycopg.connect(DB_URL, autocommit=True) as admin:
         admin.execute(f"CREATE SCHEMA {schema}")
     c = psycopg.connect(DB_URL, options=f"-c search_path={schema}")
     c.execute(SCHEMA_SQL.read_text(encoding="utf-8"))
     c.commit()
+    apply_migrations(c)
+    sync_reference(c)
     yield c
     c.close()
     with psycopg.connect(DB_URL, autocommit=True) as admin:

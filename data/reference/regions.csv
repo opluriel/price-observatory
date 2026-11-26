@@ -1,0 +1,34 @@
+name,kind,district,main_city,keywords
+District d'Abidjan,district_autonome,Abidjan,Abidjan,abidjan
+Gbôklé,region,Bas-Sassandra,Sassandra,gbokle|fresco|sassandra
+Nawa,region,Bas-Sassandra,Soubré,nawa|meagui
+San-Pédro,region,Bas-Sassandra,San-Pédro,sanpedro
+Indénié-Djuablin,region,Comoé,Abengourou,djuablin|abengourou|agnibilek
+Sud-Comoé,region,Comoé,Aboisso,comoe|aboisso
+Folon,region,Denguélé,Minignan,folon|minignan
+Kabadougou,region,Denguélé,Odienné,kabadougou|odienne
+Gôh,region,Gôh-Djiboua,Gagnoa,goh|gagnoa
+Lôh-Djiboua,region,Gôh-Djiboua,Divo,lohdjiboua|divo
+Bélier,region,Lacs,Toumodi,belier|toumodi|tiebissou
+Iffou,region,Lacs,Daoukro,iffou|daoukro
+Moronou,region,Lacs,Bongouanou,moronou|bongouanou|kotobi
+N'Zi,region,Lacs,Dimbokro,nzi|dimbokro
+Agnéby-Tiassa,region,Lagunes,Agboville,tiassa|agboville
+Grands-Ponts,region,Lagunes,Dabou,grandsponts|dabou
+La Mé,region,Lagunes,Adzopé,lame|adzope
+Cavally,region,Montagnes,Guiglo,cavally|guiglo
+Guémon,region,Montagnes,Duékoué,guemon|duekoue
+Tonkpi,region,Montagnes,Man,tonkpi
+Haut-Sassandra,region,Sassandra-Marahoué,Daloa,hautsassandra|daloa
+Marahoué,region,Sassandra-Marahoué,Bouaflé,marahoue|bouafle
+Bagoué,region,Savanes,Boundiali,bagoue|boundiali
+Poro,region,Savanes,Korhogo,poro|korhogo
+Tchologo,region,Savanes,Ferkessédougou,tchologo|ferkessedougou|ouangolodougou
+Gbêkê,region,Vallée du Bandama,Bouaké,gbeke|bouake
+Hambol,region,Vallée du Bandama,Katiola,hambol|katiola
+Bafing,region,Woroba,Touba,bafing|touba
+Béré,region,Woroba,Mankono,bere|mankono
+Worodougou,region,Woroba,Séguéla,worodougou|seguela
+District de Yamoussoukro,district_autonome,Yamoussoukro,Yamoussoukro,yamoussoukro
+Bounkani,region,Zanzan,Bouna,bounkani|bouna
+Gontougo,region,Zanzan,Bondoukou,gontougo|bondoukou

@@ -1,7 +1,7 @@
 from datetime import date
 from pathlib import Path
 
-from src.pipeline import process_week, recent_weeks, run
+from src.pipeline import exit_code, process_week, recent_weeks, run
 
 
 def test_recent_weeks_only_returns_finished_weeks():
@@ -23,3 +23,9 @@ def test_one_failing_week_does_not_stop_the_others():
     assert [r["status"] for r in results] == ["not_found", "success", "failed"]
     assert results[2]["detail"] == "Extraction à vérifier"
     assert process_week(weeks[1], None, download=download, load=load)["rows"] == 500
+
+
+def test_exit_code_signals_only_real_problems():
+    ok = [{"status": "success"}, {"status": "skipped"}, {"status": "not_found"}]   # semaine pas encore publiée : normal
+    assert exit_code(ok) == 0
+    assert exit_code(ok + [{"status": "failed"}]) == 1

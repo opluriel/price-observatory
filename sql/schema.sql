@@ -108,7 +108,7 @@ INSERT INTO source (code, name, url, kind, frequency, notes) VALUES
  ('sikafinance_conso',  'Sikafinance - prix de grande consommation',        'https://www.sikafinance.com/conso/liste_des_prix', 'retail', 'irregular', 'conditions à vérifier'),
  ('jumia_ci',           'Jumia Côte d''Ivoire - supermarché',                'https://www.jumia.ci/le-supermarche', 'retail', 'daily', 'conditions et robots.txt à vérifier');
 
--- 23 départements suivis dans le PDF hebdomadaire du ministère
+-- 24 départements apparaissant dans le PDF hebdomadaire du ministère (23 ou 24 selon les semaines)
 INSERT INTO region (country_code, name, main_city) VALUES
  ('CI', 'Agnéby-Tiassa', 'Agboville'),   ('CI', 'District d''Abidjan', 'Abidjan'),
  ('CI', 'District de Yamoussoukro', 'Yamoussoukro'), ('CI', 'Folon', 'Minignan'),
@@ -121,7 +121,7 @@ INSERT INTO region (country_code, name, main_city) VALUES
  ('CI', 'N''Zi', 'Dimbokro'),            ('CI', 'Poro', 'Korhogo'),
  ('CI', 'San-Pédro', 'San-Pédro'),       ('CI', 'Sud-Comoé', 'Aboisso'),
  ('CI', 'Tchologo', 'Ouangolodougou'),   ('CI', 'Tonkpi', 'Man'),
- ('CI', 'Worodougou', 'Séguéla');
+ ('CI', 'Worodougou', 'Séguéla'), ('CI', 'Bélier', 'Toumodi');
 
 -- 28 produits du PDF hebdomadaire
 INSERT INTO product (name, category) VALUES

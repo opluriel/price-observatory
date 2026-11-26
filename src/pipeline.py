@@ -44,6 +44,11 @@ def run(weeks: list[date], conn, **kwargs) -> list[dict]:
     return results
 
 
+def exit_code(results: list[dict]) -> int:
+    """0 si tout va bien (une semaine pas encore publiée n'est PAS une erreur), 1 si une semaine est rejetée."""
+    return 1 if any(r["status"] == "failed" for r in results) else 0
+
+
 def main() -> None:
     import psycopg
     from dotenv import load_dotenv
@@ -69,6 +74,7 @@ def main() -> None:
     for r in results:
         counts[r["status"]] = counts.get(r["status"], 0) + 1
     print("Bilan :", counts)
+    sys.exit(exit_code(results))
 
 
 if __name__ == "__main__":

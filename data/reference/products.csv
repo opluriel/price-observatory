@@ -1,0 +1,33 @@
+name,category,unit,prefixes
+Maïs grain,céréales,kg,mais
+Mil,céréales,kg,mil
+Sorgho,céréales,kg,sorgho
+Riz importé de grande consommation,céréales,kg,rizimporte
+Riz local blanchi,céréales,kg,rizlocal
+Banane plantain,féculents,kg,bananeplantain
+Igname bêtê-bêtê,féculents,kg,ignamebete
+Igname klinglè,féculents,kg,ignameklingle
+Igname kponan,féculents,kg,ignamekponan
+Igname assawa,féculents,kg,ignameassawa
+Manioc doux,féculents,kg,manioc
+Pomme de terre,féculents,kg,pommedeterre
+Haricot,légumineuses,kg,haricot
+Aubergine N'drowa,légumes,kg,auberginendrowa
+Aubergine violette,légumes,kg,aubergineviolette
+Carotte,légumes,kg,carotte
+Chou vert,légumes,kg,chou
+Gombo frais,légumes,kg,gombo
+Oignon violet de Galmi,légumes,kg,oignonviolet
+Oignon Hollande,légumes,kg,oignonhollande
+Piment frais ordinaire,légumes,kg,piment
+Tomate SODEFEL,légumes,kg,tomate
+Arachide décortiquée,oléagineux,kg,arachide
+Graine de palme ordinaire,oléagineux,kg,grainedepalme
+Viande de bœuf avec os,viande,kg,viandedeboeufavecos
+Viande de bœuf sans os,viande,kg,viandedeboeufsansos
+Poisson congelé carpe noire,poisson,kg,poissoncongelecarpenoire
+Poisson congelé carpe rouge,poisson,kg,poissoncongelecarperouge
+Poisson congelé carpe,poisson,kg,poissoncongelecarpe
+Poisson congelé chinchard,poisson,kg,poissoncongelechinchard
+Poisson congelé maquereau,poisson,kg,poissoncongelemaquereau
+Poisson congelé thon,poisson,kg,poissoncongelethon

@@ -2,7 +2,8 @@ from datetime import date
 
 import pytest
 
-from src.parse.ministry_pdf import canonical_product, canonical_region, parse_pdf, parse_period
+from src.parse.ministry_pdf import (canonical_product, canonical_region, parse_pdf, parse_period,
+                                    region_matches)
 from src.quality.checks import flag_quality
 from tests.make_fixture import build, build_wide
 
@@ -64,6 +65,8 @@ def test_name_normalisation():
     assert canonical_product('Gombo frais "dioula"') == canonical_product('Gombo frais "baoulé"') == "Gombo frais"
     assert canonical_product("Poisson congelé THON") == "Poisson congelé thon"
     assert canonical_region("MORONOU (BongouanouKotobi)") == "Moronou"
+    # observé sur le PDF du 4 mai 2026 : le titre de section pollue le texte de l'en-tête
+    assert canonical_region("PRODUITS VIVRIERS BELIER (Toumodi - Tiebissou)") == "Bélier"
     assert canonical_region("INDENIE DJUABLIN (AbengourouAgnibilekro)") == "Indénié-Djuablin"
 
 
@@ -87,6 +90,31 @@ def test_two_line_names_with_irregular_heights(tmp_path):
 
 def test_problems_explain_why_a_week_is_rejected(parsed):
     _, report = parsed
-    assert report.problems() == ["6/23 départements"]
+    assert report.problems() == ["seulement 6 régions (minimum 20)"]
     report.unknown_labels.add("Produit nouveau")
     assert any("Produit nouveau" in p for p in report.problems())
+
+
+def test_products_added_after_the_historical_backfill():
+    """Libellés rencontrés dans les PDF de 2025 (rattrapage de l'historique)."""
+    assert canonical_product("Igname assawa") == "Igname assawa"
+    assert canonical_product("Haricot") == "Haricot"
+    assert canonical_product("Sorgho") == "Sorgho"
+
+
+def test_longest_prefix_wins_for_carp():
+    assert canonical_product("Poisson congelé CARPE") == "Poisson congelé carpe"
+    assert canonical_product("Poisson congelé CARPE NOIRE") == "Poisson congelé carpe noire"
+    assert canonical_product("Poisson congelé CARPE ROUGE") == "Poisson congelé carpe rouge"
+
+
+def test_contradictory_header_is_ambiguous_not_guessed():
+    assert region_matches("BELIER (Bouaké)") == {"Bélier", "Gbêkê"}
+    assert canonical_region("BELIER (Bouaké)") is None
+
+
+def test_every_reference_region_is_recognised_by_its_name_and_its_city():
+    from src.reference import load_regions
+    for row in load_regions():
+        assert region_matches(row["name"]) == {row["name"]}, row["name"]
+        assert region_matches(f"{row['name']} ({row['main_city']})") == {row["name"]}, row["name"]

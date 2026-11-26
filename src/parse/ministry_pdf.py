@@ -20,56 +20,22 @@ from pathlib import Path
 import pandas as pd
 import pdfplumber
 
+from src.reference import load_products, load_regions
+
 STAT_COLUMNS = {"mini": "price_min", "maxi": "price_max", "moy": "price_avg"}
 EXPECTED_STAT_ORDER = ["mini", "maxi", "moy"]
 LINE_TOLERANCE = 3.0          # points : écart vertical max entre deux mots d'une même ligne
 COLUMN_MATCH_RATIO = 0.75     # un nombre doit tomber à moins de 0.75 x l'écart entre colonnes
-EXPECTED_REGIONS = 23
+MIN_REGIONS = 20   # le nombre de régions suivies varie d'une semaine à l'autre (23 ou 24)
 
 MONTHS = {
     "janvier": 1, "fevrier": 2, "mars": 3, "avril": 4, "mai": 5, "juin": 6, "juillet": 7,
     "aout": 8, "septembre": 9, "octobre": 10, "novembre": 11, "decembre": 12,
 }
 
-# (mot-clé normalisé présent dans l'en-tête, nom canonique du département)
-REGION_KEYWORDS = [
-    ("tiassa", "Agnéby-Tiassa"), ("abidjan", "District d'Abidjan"),
-    ("yamoussoukro", "District de Yamoussoukro"), ("folon", "Folon"),
-    ("gbeke", "Gbêkê"), ("grandsponts", "Grands-Ponts"), ("goh", "Gôh"),
-    ("gontougo", "Gontougo"), ("guemon", "Guémon"), ("sassandra", "Haut-Sassandra"),
-    ("djuablin", "Indénié-Djuablin"), ("kabadougou", "Kabadougou"), ("adzope", "La Mé"),
-    ("marahoue", "Marahoué"), ("moronou", "Moronou"), ("nawa", "Nawa"),
-    ("dimbokro", "N'Zi"), ("poro", "Poro"), ("sanpedro", "San-Pédro"),
-    ("comoe", "Sud-Comoé"), ("tchologo", "Tchologo"), ("tonkpi", "Tonkpi"),
-    ("worodougou", "Worodougou"),
-    # repli : la ville du marché suivi, entre parenthèses dans l'en-tête
-    ("agboville", "Agnéby-Tiassa"), ("minignan", "Folon"), ("bouake", "Gbêkê"), ("dabou", "Grands-Ponts"),
-    ("gagnoa", "Gôh"), ("bondoukou", "Gontougo"), ("duekoue", "Guémon"), ("daloa", "Haut-Sassandra"),
-    ("abengourou", "Indénié-Djuablin"), ("agnibilek", "Indénié-Djuablin"), ("odienne", "Kabadougou"),
-    ("bouafle", "Marahoué"), ("bongouanou", "Moronou"), ("kotobi", "Moronou"), ("meagui", "Nawa"),
-    ("korhogo", "Poro"), ("aboisso", "Sud-Comoé"), ("ouangolodougou", "Tchologo"), ("seguela", "Worodougou"),
-]
-
-# (préfixe normalisé du libellé, nom canonique du produit)
-PRODUCT_RULES = [
-    ("mais", "Maïs grain"), ("mil", "Mil"),
-    ("rizimporte", "Riz importé de grande consommation"), ("rizlocal", "Riz local blanchi"),
-    ("bananeplantain", "Banane plantain"), ("ignamebete", "Igname bêtê-bêtê"),
-    ("ignameklingle", "Igname klinglè"), ("ignamekponan", "Igname kponan"),
-    ("manioc", "Manioc doux"), ("pommedeterre", "Pomme de terre"),
-    ("auberginendrowa", "Aubergine N'drowa"), ("aubergineviolette", "Aubergine violette"),
-    ("carotte", "Carotte"), ("chou", "Chou vert"), ("gombo", "Gombo frais"),
-    ("oignonviolet", "Oignon violet de Galmi"), ("oignonhollande", "Oignon Hollande"),
-    ("piment", "Piment frais ordinaire"), ("tomate", "Tomate SODEFEL"),
-    ("arachide", "Arachide décortiquée"), ("grainedepalme", "Graine de palme ordinaire"),
-    ("viandedeboeufavecos", "Viande de bœuf avec os"),
-    ("viandedeboeufsansos", "Viande de bœuf sans os"),
-    ("poissoncongelecarpenoire", "Poisson congelé carpe noire"),
-    ("poissoncongelecarperouge", "Poisson congelé carpe rouge"),
-    ("poissoncongelechinchard", "Poisson congelé chinchard"),
-    ("poissoncongelemaquereau", "Poisson congelé maquereau"),
-    ("poissoncongelethon", "Poisson congelé thon"),
-]
+# Référentiels lus dans data/reference/*.csv (voir src/reference.py)
+REGION_KEYWORDS = [(keyword, row["name"]) for row in load_regions() for keyword in row["keywords"]]
+PRODUCT_RULES = [(prefix, row["name"]) for row in load_products() for prefix in row["prefixes"]]
 
 
 @dataclass
@@ -82,6 +48,7 @@ class ParseReport:
     regions_found: set[str] = field(default_factory=set)
     unknown_labels: set[str] = field(default_factory=set)
     unknown_regions: set[str] = field(default_factory=set)
+    ambiguous_regions: set[str] = field(default_factory=set)
     warnings: list[str] = field(default_factory=list)
     rows: int = 0
 
@@ -90,10 +57,12 @@ class ParseReport:
         found = []
         if self.rows == 0:
             found.append("aucune observation extraite")
-        if len(self.regions_found) != EXPECTED_REGIONS:
-            found.append(f"{len(self.regions_found)}/{EXPECTED_REGIONS} départements")
+        if len(self.regions_found) < MIN_REGIONS:
+            found.append(f"seulement {len(self.regions_found)} régions (minimum {MIN_REGIONS})")
         if self.unknown_regions:
             found.append(f"en-têtes inconnus {sorted(self.unknown_regions)}")
+        if self.ambiguous_regions:
+            found.append(f"en-têtes ambigus (plusieurs régions possibles) {sorted(self.ambiguous_regions)}")
         if self.unknown_labels:
             found.append(f"produits inconnus {sorted(self.unknown_labels)}")
         return found
@@ -106,11 +75,13 @@ class ParseReport:
             f"Fichier        : {self.pdf}",
             f"Période        : {self.period_start} -> {self.period_end}",
             f"Pages / blocs  : {self.pages} / {self.blocks}",
-            f"Départements   : {len(self.regions_found)} trouvés (attendus : {EXPECTED_REGIONS})",
+            f"Régions        : {len(self.regions_found)} trouvées (minimum attendu : {MIN_REGIONS})",
             f"Observations   : {self.rows}",
         ]
         if self.unknown_regions:
             lines.append(f"En-têtes non reconnus : {sorted(self.unknown_regions)}")
+        if self.ambiguous_regions:
+            lines.append(f"En-têtes ambigus : {sorted(self.ambiguous_regions)}")
         if self.unknown_labels:
             lines.append(f"Produits non reconnus : {sorted(self.unknown_labels)}")
         lines += [f"Avertissement  : {w}" for w in self.warnings[:15]]
@@ -129,19 +100,35 @@ def norm(text: str) -> str:
 
 
 def canonical_product(label: str) -> str | None:
+    """Produit canonique d'un libellé : le préfixe le plus LONG l'emporte (carpe noire > carpe)."""
     key = norm(label)
+    best: dict[str, int] = {}
     for prefix, name in PRODUCT_RULES:
         if key.startswith(prefix):
-            return name
-    return None
+            best[name] = max(best.get(name, 0), len(prefix))
+    if not best:
+        return None
+    longest = max(best.values())
+    winners = [name for name, length in best.items() if length == longest]
+    return winners[0] if len(winners) == 1 else None      # égalité : on refuse de deviner
+
+
+def region_matches(header_text: str) -> set[str]:
+    """Toutes les régions dont un mot-clé apparaît dans l'en-tête (en général une seule).
+
+    Un mot-clé contenu dans un mot-clé plus long également présent est ignoré :
+    « sassandra » (Gbôklé) ne doit pas déclencher sur « hautsassandra » (Haut-Sassandra).
+    """
+    key = norm(header_text)
+    hits = {(keyword, name) for keyword, name in REGION_KEYWORDS if keyword in key}
+    keywords = {keyword for keyword, _ in hits}
+    return {name for keyword, name in hits
+            if not any(keyword != other and keyword in other for other in keywords)}
 
 
 def canonical_region(header_text: str) -> str | None:
-    key = norm(header_text)
-    for keyword, name in REGION_KEYWORDS:
-        if keyword in key:
-            return name
-    return None
+    matches = region_matches(header_text)
+    return next(iter(matches)) if len(matches) == 1 else None
 
 
 # ---------- Période ----------
@@ -189,7 +176,7 @@ def _header_rows(words: list[dict]) -> list[list[dict]]:
     """Une ligne d'en-tête = tous les mots « mini / maxi / moy » situés à la même hauteur.
 
     On ne s'appuie PAS sur le mot SPECULATIONS : il est centré verticalement dans la cellule
-    d'en-tête, et les noms de départements peuvent se trouver au-dessus de lui.
+    d'en-tête, et les noms de régions peuvent se trouver au-dessus de lui.
     """
     stat_words = sorted((w for w in words if norm(w["text"]) in STAT_COLUMNS), key=lambda w: w["top"])
     rows: list[list[dict]] = []
@@ -219,7 +206,7 @@ def _parse_block(words, stat_words, limit_top, report: ParseReport, page_no: int
     header_bottom = max(w["bottom"] for w in stat_words)
     prix_top = _prix_top(words, stat_words)
 
-    # --- noms de départements : on remonte ligne par ligne depuis « Prix » jusqu'à la première
+    # --- noms de régions : on remonte ligne par ligne depuis « Prix » jusqu'à la première
     #     ligne qui contient un nombre (= dernière ligne de données du bloc précédent).
     above = [w for w in words if w["top"] < prix_top - 0.5]
     name_words: list[dict] = []
@@ -236,8 +223,11 @@ def _parse_block(words, stat_words, limit_top, report: ParseReport, page_no: int
         in_group = [w for w in name_words if left <= (w["x0"] + w["x1"]) / 2 <= right
                     and not norm(w["text"]).startswith("speculations")]
         header_text = " ".join(w["text"] for w in sorted(in_group, key=lambda w: (round(w["top"]), w["x0"])))
-        region = canonical_region(header_text)
-        if region is None:
+        matches = region_matches(header_text)
+        region = next(iter(matches)) if len(matches) == 1 else None
+        if len(matches) > 1:
+            report.ambiguous_regions.add(f"{header_text} -> {sorted(matches)}")
+        elif region is None:
             report.unknown_regions.add(header_text or f"(vide, page {page_no}, groupe {i // 3})")
         else:
             report.regions_found.add(region)
