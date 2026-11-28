@@ -1,8 +1,8 @@
 -- Price Observatory: PostgreSQL schema (Supabase/Neon-compatible)
--- Principles: we track each ingestion, we never correct data silently
--- (we flag it with quality_flag), and the schema is multi-country from the start.
+-- Principles: We track every data collection; we never correct data without making it known.
+-- (it is marked with *quality_flag*), and the schema is designed for multiple countries from the start.
 
--- ---------- Referentials ----------
+-- ---------- Reference Data ----------
 
 CREATE TABLE country (
     code     CHAR(2) PRIMARY KEY,
@@ -44,14 +44,14 @@ CREATE TABLE product_alias (
     PRIMARY KEY (source_id, raw_name)
 );
 
--- ---------- Traceability of Data Collection ----------
+-- ---------- Traceability of Data Collections ----------
 
 CREATE TABLE ingestion_run (
     id          BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     source_id   INT         NOT NULL REFERENCES source(id),
     started_at  TIMESTAMPTZ NOT NULL DEFAULT now(),
     file_url    TEXT,
-    file_sha256 TEXT,                      -- prevents the same file from being uploaded twice
+    file_sha256 TEXT,                      -- Avoid uploading the same file twice.
     status      TEXT        NOT NULL DEFAULT 'running'
                 CHECK (status IN ('running', 'success', 'failed', 'skipped')),
     rows_loaded INT,
@@ -81,15 +81,15 @@ CREATE TABLE price_observation (
 CREATE INDEX idx_obs_product_period ON price_observation (product_id, period_start);
 CREATE INDEX idx_obs_region_period  ON price_observation (region_id, period_start);
 
--- Regulated prices: price caps (rice, sugar, oil, etc.) and fuel.
+-- Regulated Prices: ceilings (rice, sugar, oil...) and fuel.
 CREATE TABLE regulated_price (
     id            INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     source_id     INT     NOT NULL REFERENCES source(id),
     product_label TEXT    NOT NULL,
-    pack          TEXT,                    -- e.g., “22.5-kg bag,” “liter”
+    pack          TEXT,                    -- e.g., “22.5 kg bag,” “liter”'
     max_price     NUMERIC(12,2) NOT NULL,
     currency      CHAR(3) NOT NULL DEFAULT 'XOF',
-    area          TEXT,                    -- e.g., ‘Abidjan + 30 km’, 'national'
+    area          TEXT,                    -- e.g., “Abidjan + 30 km,” “national”'
     valid_from    DATE    NOT NULL,
     valid_to      DATE,
     legal_ref     TEXT
@@ -108,34 +108,4 @@ INSERT INTO source (code, name, url, kind, frequency, notes) VALUES
  ('sikafinance_conso',  'Sikafinance - prix de grande consommation',        'https://www.sikafinance.com/conso/liste_des_prix', 'retail', 'irregular', 'conditions à vérifier'),
  ('jumia_ci',           'Jumia Côte d''Ivoire - supermarché',                'https://www.jumia.ci/le-supermarche', 'retail', 'daily', 'conditions et robots.txt à vérifier');
 
--- 24 departments listed in the ministry's weekly PDF (23 or 24, depending on the week)
-INSERT INTO region (country_code, name, main_city) VALUES
- ('CI', 'Agnéby-Tiassa', 'Agboville'),   ('CI', 'District d''Abidjan', 'Abidjan'),
- ('CI', 'District de Yamoussoukro', 'Yamoussoukro'), ('CI', 'Folon', 'Minignan'),
- ('CI', 'Gbêkê', 'Bouaké'),              ('CI', 'Grands-Ponts', 'Dabou'),
- ('CI', 'Gôh', 'Gagnoa'),                ('CI', 'Gontougo', 'Bondoukou'),
- ('CI', 'Guémon', 'Duékoué'),            ('CI', 'Haut-Sassandra', 'Daloa'),
- ('CI', 'Indénié-Djuablin', 'Abengourou'), ('CI', 'Kabadougou', 'Odienné'),
- ('CI', 'La Mé', 'Adzopé'),              ('CI', 'Marahoué', 'Bouaflé'),
- ('CI', 'Moronou', 'Bongouanou'),        ('CI', 'Nawa', 'Méagui'),
- ('CI', 'N''Zi', 'Dimbokro'),            ('CI', 'Poro', 'Korhogo'),
- ('CI', 'San-Pédro', 'San-Pédro'),       ('CI', 'Sud-Comoé', 'Aboisso'),
- ('CI', 'Tchologo', 'Ouangolodougou'),   ('CI', 'Tonkpi', 'Man'),
- ('CI', 'Worodougou', 'Séguéla'), ('CI', 'Bélier', 'Toumodi');
-
--- 28 products in the weekly PDF
-INSERT INTO product (name, category) VALUES
- ('Maïs grain', 'céréales'), ('Mil', 'céréales'),
- ('Riz importé de grande consommation', 'céréales'), ('Riz local blanchi', 'céréales'),
- ('Banane plantain', 'féculents'), ('Igname bêtê-bêtê', 'féculents'),
- ('Igname klinglè', 'féculents'), ('Igname kponan', 'féculents'),
- ('Manioc doux', 'féculents'), ('Pomme de terre', 'féculents'),
- ('Aubergine N''drowa', 'légumes'), ('Aubergine violette', 'légumes'),
- ('Carotte', 'légumes'), ('Chou vert', 'légumes'), ('Gombo frais', 'légumes'),
- ('Oignon violet de Galmi', 'légumes'), ('Oignon Hollande', 'légumes'),
- ('Piment frais ordinaire', 'légumes'), ('Tomate SODEFEL', 'légumes'),
- ('Arachide décortiquée', 'oléagineux'), ('Graine de palme ordinaire', 'oléagineux'),
- ('Viande de bœuf avec os', 'viande'), ('Viande de bœuf sans os', 'viande'),
- ('Poisson congelé carpe noire', 'poisson'), ('Poisson congelé carpe rouge', 'poisson'),
- ('Poisson congelé chinchard', 'poisson'), ('Poisson congelé maquereau', 'poisson'),
- ('Poisson congelé thon', 'poisson');
+-- Regions and Products: single source = data/reference/*.csv, loaded by  python -m src.admin sync
